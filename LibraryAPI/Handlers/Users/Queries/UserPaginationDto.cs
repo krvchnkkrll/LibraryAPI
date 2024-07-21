@@ -1,0 +1,16 @@
+﻿
+using LibraryAPI.Models;
+
+namespace LibraryAPI.Handlers.Users.Commands.Update;
+
+public class UserPaginationDto
+{
+    public IEnumerable<UserQueriesDto> Users { get; set; }
+    public PaginationMetaData PaginationMetaData { get; set; }
+
+    public UserPaginationDto(IEnumerable<UserQueriesDto> users, PaginationMetaData paginationMetaData)
+    {
+        Users = users;
+        PaginationMetaData = paginationMetaData;
+    }
+}

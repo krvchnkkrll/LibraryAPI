@@ -31,6 +31,7 @@ file sealed class UpdateAuthorHandler : IRequest<UpdateAuthor>
         author.Patronymic = request.Dto.Patronymic;
 
         _context.Authors.Update(author);
+        
         await _context.SaveChangesAsync(cancellationToken);
     }
 }
