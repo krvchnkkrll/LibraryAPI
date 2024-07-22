@@ -1,27 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using LibraryAPI.Models.Enums;
+﻿using LibraryAPI.Models.Entities;
 
-namespace LibraryAPI.Models.Entities;
+namespace LibraryAPI.Handlers.UserBooks.Queries;
 
-public class UserBook
+public class UserBooksQueriesDto
 {
-    public UserBook(int userId, int bookId,  DateTime? dateReturn, User? user, Book? book)
-    {
-        UserId = userId;
-        BookId = bookId;
-        DateReceipt = DateTime.Now;
-        DateReturn = dateReturn;
-        User = user;
-        Book = book;
-    }
-
     /// <summary>
     /// Идентификатор записи выдачи книги пользователю
     /// </summary>
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id { get; private set; }
+    public int Id { get; set; }
     
     /// <summary>
     /// Пользователь получивший книгу
@@ -46,7 +32,6 @@ public class UserBook
     /// <summary>
     /// Дата получения книги
     /// </summary>
-    [Required]
     public DateTime DateReceipt { get; set; }
     
     /// <summary>

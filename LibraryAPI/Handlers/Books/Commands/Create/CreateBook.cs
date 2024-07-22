@@ -4,7 +4,7 @@ using MediatR;
 
 namespace LibraryAPI.Handlers.Books.Commands.Create;
 
-public sealed record CreateBook(BookCommandDto Dto) : IRequest<int>;
+public sealed record CreateBook(BookCommandDto Dto) : IRequest;
 
 file sealed class CreateBookHandler : IRequest<CreateBook>
 {

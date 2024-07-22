@@ -27,9 +27,4 @@
       </Content>
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Handlers\UserBooks\Commands\" />
-      <Folder Include="Handlers\UserBooks\Queries\" />
-    </ItemGroup>
-
 </Project>
