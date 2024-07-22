@@ -1,7 +1,7 @@
 ﻿
 using LibraryAPI.Models;
 
-namespace LibraryAPI.Handlers.Users.Commands.Update;
+namespace LibraryAPI.Handlers.Users.Queries;
 
 public class UserPaginationDto
 {

@@ -8,10 +8,12 @@ public class Book
 {
     private Book(){}
     
-    public Book(string name, int authorId)
+    public Book(string name, int authorId, BookStatus bookStatus, Author? author)
     {
         Name = name;
         AuthorId = authorId;
+        BookStatus = bookStatus;
+        Author = author;
     }
     
     /// <summary>

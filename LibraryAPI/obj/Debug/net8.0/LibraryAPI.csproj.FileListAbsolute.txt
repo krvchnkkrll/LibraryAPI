@@ -36,7 +36,6 @@ C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\obj\Debug\net8.0\LibraryAPI.p
 C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\obj\Debug\net8.0\LibraryAPI.genruntimeconfig.cache
 C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\obj\Debug\net8.0\ref\LibraryAPI.dll
 C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\appsettings.Production.json
-C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\Development.json
 C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\Humanizer.dll
 C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -107,3 +106,5 @@ C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\ru\Microsoft
 C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\MediatR.dll
+C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\MediatR.Contracts.dll

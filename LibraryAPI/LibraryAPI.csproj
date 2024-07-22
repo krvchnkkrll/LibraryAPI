@@ -28,8 +28,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Handlers\Books\Commands\" />
-      <Folder Include="Handlers\Books\Queries\" />
       <Folder Include="Handlers\UserBooks\Commands\" />
       <Folder Include="Handlers\UserBooks\Queries\" />
     </ItemGroup>

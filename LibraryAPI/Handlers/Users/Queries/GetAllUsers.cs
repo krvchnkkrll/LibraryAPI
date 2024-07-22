@@ -3,7 +3,7 @@ using LibraryAPI.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace LibraryAPI.Handlers.Users.Commands.Update;
+namespace LibraryAPI.Handlers.Users.Queries;
 
 public sealed record GetAllUsers(
     string? Surname, 
