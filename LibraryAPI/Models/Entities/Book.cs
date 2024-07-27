@@ -8,14 +8,14 @@ public class Book
 {
     private Book(){}
     
-    public Book(string name, int authorId, BookStatus bookStatus, Author? author)
+    public Book(string name, int authorId, BookStatus bookStatus)
     {
         Name = name;
         AuthorId = authorId;
         BookStatus = bookStatus;
-        Author = author;
     }
     
+
     /// <summary>
     /// Уникальный идентификатор книги
     /// </summary>
