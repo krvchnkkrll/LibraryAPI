@@ -6,13 +6,14 @@ using Microsoft.EntityFrameworkCore;
 namespace LibraryAPI.Handlers.Users.Queries;
 
 public sealed record GetAllUsers(
-    string? Surname, 
-    string? Name, 
-    string? Patronymic, 
+    string? Surname,
+    string? Name,
+    string? Patronymic,
     bool? IsItStaff,
-    string? SearchQuery, 
-    int PageNumber, 
+    string? SearchQuery,
+    int PageNumber,
     int PageSize) : IRequest<UserPaginationDto>;
+
 
 file sealed class GetAllUsersHandler : IRequestHandler<GetAllUsers, UserPaginationDto>
 {

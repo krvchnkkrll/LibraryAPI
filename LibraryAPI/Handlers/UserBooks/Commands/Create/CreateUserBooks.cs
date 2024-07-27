@@ -20,9 +20,7 @@ file sealed class CreateUserBooksHandler : IRequest<CreateUserBooks>
         var userbook = new UserBook(
             request.Dto.UserId,
             request.Dto.BookId,
-            request.Dto.DateReturn,
-            request.Dto.User,
-            request.Dto.Book);
+            request.Dto.DateReturn);
 
         await _context.UserBooks.AddAsync(userbook, cancellationToken);
 

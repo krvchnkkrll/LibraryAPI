@@ -7,7 +7,7 @@ namespace LibraryAPI.Handlers.Authors.Commands.Update;
 
 public record UpdateAuthor(int Id, AuthorCommandDto Dto) : IRequest;
 
-file sealed class UpdateAuthorHandler : IRequest<UpdateAuthor>
+file sealed class UpdateAuthorHandler : IRequestHandler<UpdateAuthor>
 {
     private readonly LibraryInfoContext _context;
 

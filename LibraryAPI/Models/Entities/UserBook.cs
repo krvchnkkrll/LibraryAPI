@@ -6,14 +6,13 @@ namespace LibraryAPI.Models.Entities;
 
 public class UserBook
 {
-    public UserBook(int userId, int bookId,  DateTime? dateReturn, User? user, Book? book)
+    public UserBook(int userId, int bookId,  DateTime? dateReturn)
     {
         UserId = userId;
         BookId = bookId;
         DateReceipt = DateTime.Now;
         DateReturn = dateReturn;
-        User = user;
-        Book = book;
+
     }
 
     /// <summary>
