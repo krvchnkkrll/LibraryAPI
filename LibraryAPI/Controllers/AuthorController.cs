@@ -40,8 +40,6 @@ public class AuthorsController : ControllerBase
         
         var result = await _mediator.Send(query, cancellationToken);
         
-        
-        
         return Ok(result);
     }
 
@@ -71,7 +69,7 @@ public class AuthorsController : ControllerBase
     }
 
     [HttpDelete]
-    public async Task<ActionResult> DeleteAuthor(int id, CancellationToken cancellationToken)
+    public async Task<IActionResult> DeleteAuthor(int id, CancellationToken cancellationToken)
     {
         await _mediator.Send(new DeleteAuthor(id), cancellationToken);
         

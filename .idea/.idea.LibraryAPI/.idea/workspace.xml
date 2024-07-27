@@ -10,6 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb7d421b-beff-4f38-b48f-d8eb3d0e8baa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/AuthorController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/BookController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/UserBookController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/UserController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Authors/Commands/Update/UpdateAuthor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Authors/Commands/Update/UpdateAuthor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Commands/Create/CreateUserBooks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Commands/Create/CreateUserBooks.cs" afterDir="false" />
@@ -159,6 +163,7 @@
       <workItem from="1721850563677" duration="3186000" />
       <workItem from="1721934752395" duration="2566000" />
       <workItem from="1722072558505" duration="606000" />
+      <workItem from="1722077455845" duration="313000" />
     </task>
     <servers />
   </component>
