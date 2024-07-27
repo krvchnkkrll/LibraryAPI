@@ -43,9 +43,9 @@ public class UserController : ControllerBase
             pageSize ?? 10
         );
         
-        var result = await _mediator.Send(query, cancellationToken);
+        var user = await _mediator.Send(query, cancellationToken);
         
-        return Ok(result);
+        return Ok(user);
     }
 
     [HttpPost]

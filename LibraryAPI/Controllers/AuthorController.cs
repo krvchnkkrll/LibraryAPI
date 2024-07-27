@@ -38,9 +38,9 @@ public class AuthorsController : ControllerBase
             pageSize ?? 10
         );
         
-        var result = await _mediator.Send(query, cancellationToken);
+        var authors = await _mediator.Send(query, cancellationToken);
         
-        return Ok(result);
+        return Ok(authors);
     }
 
     [HttpPost]
