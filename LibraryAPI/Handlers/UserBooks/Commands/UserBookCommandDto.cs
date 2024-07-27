@@ -2,7 +2,7 @@
 
 namespace LibraryAPI.Handlers.UserBooks.Commands;
 
-public class UserBooksCommandDto
+public class UserBookCommandDto
 {
     /// <summary>
     /// Идентификатор записи выдачи книги пользователю

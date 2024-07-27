@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LibraryAPI.Handlers.UserBooks.Commands.Update;
 
-public record UpdateUserBook(int Id, UserBooksCommandDto Dto) : IRequest;
+public record UpdateUserBook(int Id, UserBookCommandDto Dto) : IRequest;
 
 file sealed class UpdateUserBookHandler : IRequest<UpdateBook>
 {
