@@ -25,13 +25,10 @@ file sealed class UpdateUserBookHandler : IRequest<UpdateBook>
         {
             throw new KeyNotFoundException($"Запись о книги пользователя с индексом {request.Id} не найдена");
         }
-
-        userBook.UserId = request.Dto.UserId;
+        
         userBook.BookId = request.Dto.BookId;
         userBook.DateReceipt = request.Dto.DateReceipt;
         userBook.DateReturn = request.Dto.DateReturn;
-        userBook.Book = request.Dto.Book;
-        userBook.User = request.Dto.User;
 
         _context.UserBooks.Update(userBook);
 

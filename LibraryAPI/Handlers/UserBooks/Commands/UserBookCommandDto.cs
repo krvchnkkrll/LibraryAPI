@@ -5,24 +5,9 @@ namespace LibraryAPI.Handlers.UserBooks.Commands;
 public class UserBookCommandDto
 {
     /// <summary>
-    /// Идентификатор записи выдачи книги пользователю
-    /// </summary>
-    public int Id { get; set; }
-    
-    /// <summary>
-    /// Пользователь получивший книгу
-    /// </summary>
-    public User? User { get; set; }
-    
-    /// <summary>
     /// Уникальный идентификатор пользователя получившего книгу
     /// </summary>
     public int UserId { get; set; }
-
-    /// <summary>
-    /// Книга, которую забрал пользователь
-    /// </summary>
-    public Book? Book { get; set; }
     
     /// <summary>
     /// Идентификатор книги
