@@ -1,10 +1,9 @@
 ﻿using LibraryAPI.DbContext;
-using LibraryAPI.Handlers.Books.Queries;
 using LibraryAPI.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace LibraryAPI.Handlers.UserBooks.Queries;
+namespace LibraryAPI.Handlers.UserBooks.Queries.GetAllUserBooks;
 
 public sealed record GetAllUserBooks(
     int PageNumber, 
