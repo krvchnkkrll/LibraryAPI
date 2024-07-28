@@ -4,6 +4,8 @@ using LibraryAPI.Handlers.Users.Commands.Create;
 using LibraryAPI.Handlers.Users.Commands.Delete;
 using LibraryAPI.Handlers.Users.Commands.Update;
 using LibraryAPI.Handlers.Users.Queries;
+using LibraryAPI.Handlers.Users.Queries.GetAllUsers;
+using LibraryAPI.Handlers.Users.Queries.GetUserById;
 using LibraryAPI.Models.Enums;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -21,7 +23,7 @@ public class UserController : ControllerBase
         _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
     }
 
-    [HttpGet]
+    [HttpGet("GetAllUsers")]
     public async Task<IActionResult> GetAllUsers(
         [FromQuery] string? surname, 
         [FromQuery] string? name, 
@@ -48,7 +50,20 @@ public class UserController : ControllerBase
         return Ok(user);
     }
 
-    [HttpPost]
+    [HttpGet("GetUserById")]
+    public async Task<IActionResult> GetUserById(
+        [FromQuery] int id,
+        CancellationToken cancellationToken)
+    {
+        var query = new GetUserById(id);
+
+        var user = await _mediator.Send(query, cancellationToken);
+
+        return Ok(user);
+    }
+    
+    
+    [HttpPost("CreateUser")]
     public async Task<IActionResult> CreateUser(
         [FromBody] UserCommandDto dto,
         CancellationToken cancellationToken)
@@ -60,7 +75,7 @@ public class UserController : ControllerBase
         return Ok("Пользователь добавлен");
     }
 
-    [HttpPut]
+    [HttpPut("UpdateUser")]
     public async Task<IActionResult> UpdateUser(
         int id,
         [FromBody] UserCommandDto dto,
@@ -73,7 +88,7 @@ public class UserController : ControllerBase
         return Ok("Пользователь изменен");
     }
 
-    [HttpDelete]
+    [HttpDelete("DeleteUser")]
     public async Task<IActionResult> DeleteUser(int id, CancellationToken cancellationToken)
     {
         await _mediator.Send(new DeleteUser(id), cancellationToken);

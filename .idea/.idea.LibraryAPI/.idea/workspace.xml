@@ -10,19 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb7d421b-beff-4f38-b48f-d8eb3d0e8baa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/AuthorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/AuthorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/ref/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/ref/LibraryAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/refint/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/refint/LibraryAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Queries/GetAllUsers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Queries/GetAllUsers/GetAllUsers.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +142,7 @@
       <workItem from="1722072558505" duration="606000" />
       <workItem from="1722077455845" duration="9755000" />
       <workItem from="1722162535345" duration="2786000" />
-      <workItem from="1722165378409" duration="1421000" />
+      <workItem from="1722165378409" duration="3037000" />
     </task>
     <servers />
   </component>
