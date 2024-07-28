@@ -2811,11 +2811,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\krvch\\RiderProjects\\LibraryApi\\LibraryAPI\\LibraryAPI.csproj",
+      "projectUniqueName": "C:\\Users\\krvch\\RiderProjects\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj",
       "projectName": "LibraryAPI",
-      "projectPath": "C:\\Users\\krvch\\RiderProjects\\LibraryApi\\LibraryAPI\\LibraryAPI.csproj",
+      "projectPath": "C:\\Users\\krvch\\RiderProjects\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj",
       "packagesPath": "C:\\Users\\krvch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\krvch\\RiderProjects\\LibraryApi\\LibraryAPI\\obj\\",
+      "outputPath": "C:\\Users\\krvch\\RiderProjects\\LibraryAPI\\LibraryAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krvch\\AppData\\Roaming\\NuGet\\NuGet.Config"

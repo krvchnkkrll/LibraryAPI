@@ -3,6 +3,7 @@ using LibraryAPI.Handlers.Authors.Commands.Create;
 using LibraryAPI.Handlers.Authors.Commands.Delete;
 using LibraryAPI.Handlers.Authors.Commands.Update;
 using LibraryAPI.Handlers.Authors.Queries;
+using LibraryAPI.Handlers.Authors.Queries.GetAllAuthors;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

@@ -3,7 +3,7 @@ using LibraryAPI.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace LibraryAPI.Handlers.Authors.Queries;
+namespace LibraryAPI.Handlers.Authors.Queries.GetAllAuthors;
 
 public sealed record GetAllAuthors(
     string? Surname, 
