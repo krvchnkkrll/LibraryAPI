@@ -12,7 +12,7 @@ file sealed class GetAuthorByIdHandler : IRequestHandler<GetAuthorById, AuthorQu
 
     public GetAuthorByIdHandler(LibraryInfoContext context)
     {
-        context = context ?? throw new ArgumentNullException(nameof(context));
+        _context = context ?? throw new ArgumentNullException(nameof(context));
     }
 
     public async Task<AuthorQueriesDto> Handle(GetAuthorById request, CancellationToken cancellationToken)
