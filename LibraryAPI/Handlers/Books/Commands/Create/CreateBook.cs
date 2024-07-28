@@ -20,8 +20,7 @@ file sealed class CreateBookHandler : IRequest<CreateBook>
         var book = new Book(
             request.Dto.Name,
             request.Dto.AuthorId,
-            request.Dto.BookStatus,
-            request.Dto.Author);
+            request.Dto.BookStatus);
 
         await _context.Books.AddAsync(book, cancellationToken);
 

@@ -3,11 +3,6 @@
 public class UserCommandDto
 {
     /// <summary>
-    /// Уникальный идентификатор пользователя
-    /// </summary>
-    public int Id { get; set; }
-
-    /// <summary>
     /// Фамилия пользователя
     /// </summary>
     public string Surname { get; set; }

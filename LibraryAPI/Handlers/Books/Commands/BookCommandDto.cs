@@ -6,11 +6,6 @@ namespace LibraryAPI.Handlers.Books.Commands;
 public class BookCommandDto
 {
     /// <summary>
-    /// Уникальный идентификатор книги
-    /// </summary>
-    public int Id { get; set; }
-
-    /// <summary>
     /// Название книги
     /// </summary>
     public string Name { get; set; } = default!;
@@ -20,10 +15,6 @@ public class BookCommandDto
     /// </summary>
     public Genre Genre { get; set; }
     
-    /// <summary>
-    /// Автор
-    /// </summary>
-    public Author? Author { get; set; }
     
     /// <summary>
     /// Уникальный идентификатор автора

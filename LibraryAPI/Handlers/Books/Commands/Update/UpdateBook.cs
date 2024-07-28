@@ -26,7 +26,6 @@ file sealed class UpdateBookHandler : IRequest<UpdateBook>
         }
 
         book.Name = request.Dto.Name;
-        book.Author = request.Dto.Author;
         book.BookStatus = request.Dto.BookStatus;
         book.Genre = request.Dto.Genre;
 

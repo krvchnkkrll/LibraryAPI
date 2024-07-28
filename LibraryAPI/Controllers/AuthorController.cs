@@ -3,6 +3,8 @@ using LibraryAPI.Handlers.Authors.Commands.Create;
 using LibraryAPI.Handlers.Authors.Commands.Delete;
 using LibraryAPI.Handlers.Authors.Commands.Update;
 using LibraryAPI.Handlers.Authors.Queries;
+using LibraryAPI.Handlers.Authors.Queries.GetAllAuthors;
+using LibraryAPI.Handlers.Authors.Queries.GetAuthorById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,7 +21,7 @@ public class AuthorsController : ControllerBase
         _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
     }
 
-    [HttpGet]
+    [HttpGet("GetAllAuthors")]
     public async Task<IActionResult> GetAllAuthors(
         [FromQuery] string? surname,
         [FromQuery] string? name,
@@ -43,7 +45,21 @@ public class AuthorsController : ControllerBase
         return Ok(authors);
     }
 
-    [HttpPost]
+    [HttpGet("GetAuthorById")]
+    public async Task<IActionResult> GetAuthorById(
+        [FromQuery] int id,
+        CancellationToken cancellationToken)
+    {
+        var query = new GetAuthorById(id);
+
+        var author = await _mediator.Send(query, cancellationToken);
+
+        return Ok(author);
+    }
+    
+    
+    
+    [HttpPost("CreateAuthor")]
     public async Task<IActionResult> CreateAuthor(
         [FromBody] AuthorCommandDto dto,
         CancellationToken cancellationToken)
@@ -55,7 +71,7 @@ public class AuthorsController : ControllerBase
         return Ok("Автор добавлен");
     }
 
-    [HttpPut]
+    [HttpPut("UpdateAuthor")]
     public async Task<IActionResult> UpdateAuthor(
         int id, 
         [FromBody] AuthorCommandDto dto,
@@ -68,7 +84,7 @@ public class AuthorsController : ControllerBase
         return Ok("Автор изменен");
     }
 
-    [HttpDelete]
+    [HttpDelete("DeleteAuthor")]
     public async Task<IActionResult> DeleteAuthor(int id, CancellationToken cancellationToken)
     {
         await _mediator.Send(new DeleteAuthor(id), cancellationToken);

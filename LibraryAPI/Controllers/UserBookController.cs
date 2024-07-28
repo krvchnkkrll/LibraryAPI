@@ -3,6 +3,9 @@ using LibraryAPI.Handlers.UserBooks.Commands.Create;
 using LibraryAPI.Handlers.UserBooks.Commands.Delete;
 using LibraryAPI.Handlers.UserBooks.Commands.Update;
 using LibraryAPI.Handlers.UserBooks.Queries;
+using LibraryAPI.Handlers.UserBooks.Queries.GetAllUserBooks;
+using LibraryAPI.Handlers.UserBooks.Queries.GetUserBookById;
+using LibraryAPI.Handlers.Users.Queries.GetUserById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,7 +22,7 @@ public class UserBookController : ControllerBase
         _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
     }
 
-    [HttpGet]
+    [HttpGet("GetAllUsersBooks")]
     public async Task<IActionResult> GetAllUsersBook(
         [FromQuery] int? pageNumber,
         [FromQuery] int? pageSize, 
@@ -29,37 +32,48 @@ public class UserBookController : ControllerBase
             pageNumber ?? 1,
             pageSize ?? 10);
 
-        var usersbook = await _mediator.Send(query, cancellationToken);
+        var usersBook = await _mediator.Send(query, cancellationToken);
 
-        return Ok(usersbook);
+        return Ok(usersBook);
     }
 
-    [HttpPost]
+    [HttpGet("GetUserBookById")]
+    public async Task<IActionResult> GetUserBookById(
+        [FromQuery] int id,
+        CancellationToken cancellationToken)
+    {
+        var query = new GetUserBookById(id);
+
+        var book = await _mediator.Send(query, cancellationToken);
+
+        return Ok(book);
+    }
+
+    [HttpPost("CreateUserBook")]
     public async Task<IActionResult> CreateUsersBook(
         [FromBody] UserBookCommandDto dto,
         CancellationToken cancellationToken)
     {
-        var userbook = new CreateUserBooks(dto);
+        var userBook = new CreateUserBooks(dto);
 
-        await _mediator.Send(userbook, cancellationToken);
+        await _mediator.Send(userBook, cancellationToken);
 
         return Ok("Книга пользователя добавлена");
     }
 
-    [HttpPut]
+    [HttpPut("UpdateUserBook")]
     public async Task<IActionResult> UpdateUserBook(
         int id,
         [FromBody] UserBookCommandDto dto,
-        CancellationToken cancellationToken)
-    {
-        var userbook = new UpdateUserBook(id, dto);
+        CancellationToken cancellationToken) {
+        var userBook = new UpdateUserBook(id, dto);
 
-        await _mediator.Send(userbook, cancellationToken);
+        await _mediator.Send(userBook, cancellationToken);
 
         return Ok("Книга пользователя изменена");
     }
 
-    [HttpDelete]
+    [HttpDelete("DeleteUserBook")]
     public async Task<IActionResult> DeleteUserBook(
         int id,
         CancellationToken cancellationToken)

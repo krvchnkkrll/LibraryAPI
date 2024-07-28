@@ -4,7 +4,7 @@ using LibraryAPI.Models.Enums;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace LibraryAPI.Handlers.Books.Queries;
+namespace LibraryAPI.Handlers.Books.Queries.GetAllBooks;
 
 public sealed record GetAllBooks(
     string? Name,
