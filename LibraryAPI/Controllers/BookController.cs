@@ -3,6 +3,8 @@ using LibraryAPI.Handlers.Books.Commands.Create;
 using LibraryAPI.Handlers.Books.Commands.Delete;
 using LibraryAPI.Handlers.Books.Commands.Update;
 using LibraryAPI.Handlers.Books.Queries;
+using LibraryAPI.Handlers.Books.Queries.GetAllBooks;
+using LibraryAPI.Handlers.Books.Queries.GetBookById;
 using LibraryAPI.Models.Enums;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +22,7 @@ public class BookController : ControllerBase
         _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
     }
 
-    [HttpGet]
+    [HttpGet("GetAllBooks")]
     public async Task<IActionResult> GetAllBooks(
         [FromQuery] string? name,
         [FromQuery] Genre? genre,
@@ -39,6 +41,18 @@ public class BookController : ControllerBase
         var books = await _mediator.Send(query, cancellationToken);
 
         return Ok(books);
+    }
+
+    [HttpGet("GetBookById")]
+    public async Task<IActionResult> GetBookById(
+        [FromQuery] int id,
+        CancellationToken cancellationToken)
+    {
+        var query = new GetBookById(id);
+
+        var book = await _mediator.Send(query, cancellationToken);
+
+        return Ok(book);
     }
 
     [HttpPost]

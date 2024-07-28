@@ -10,8 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb7d421b-beff-4f38-b48f-d8eb3d0e8baa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Queries/GetAllUsers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Queries/GetAllUsers/GetAllUsers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/BookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/BookController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Queries/GetAllBooks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Queries/GetAllBooks/GetAllBooks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Queries/GetUserById/GetUserById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Queries/GetUserById/GetUserById.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +143,7 @@
       <workItem from="1722072558505" duration="606000" />
       <workItem from="1722077455845" duration="9755000" />
       <workItem from="1722162535345" duration="2786000" />
-      <workItem from="1722165378409" duration="3037000" />
+      <workItem from="1722165378409" duration="5332000" />
     </task>
     <servers />
   </component>

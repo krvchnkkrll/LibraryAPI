@@ -1,5 +1,4 @@
 ﻿using LibraryAPI.DbContext;
-using LibraryAPI.Handlers.Authors.Queries;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
