@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ironIiWO3GiobpiSkP0LJZGFkV9udq89bukyTCIyAZUs8QOVn9gNGoLXJ7kJh+B7FsCM1W1Avr3vNvHq9fMP7Q==",
+  "dgSpecHash": "Fye73r3f/P66JGQcnVNx65P86bbTTTceJzdr3ffYhGSajzss8myZ6nJZQRAw/5dOwR47zp8u13hhNqmuRK6G9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\krvch\\RiderProjects\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\krvch\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
+    "C:\\Users\\krvch\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\krvch\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.2\\fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512",
     "C:\\Users\\krvch\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\krvch\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
     "C:\\Users\\krvch\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

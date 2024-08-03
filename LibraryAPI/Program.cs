@@ -1,22 +1,31 @@
 using System.Reflection;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using LibraryAPI.Behaviors;
 using LibraryAPI.DbContext;
 using Microsoft.EntityFrameworkCore;
+using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-// Add services to the container.
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<LibraryInfoContext>(
     dbContextOptions => dbContextOptions.UseNpgsql(
         builder.Configuration.GetConnectionString("LibraryDB")));
 
-builder.Services.AddMediatR(
-    cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+builder.Services.AddFluentValidationAutoValidation()
+    .AddFluentValidationClientsideAdapters();
 
+builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+    cfg.AddOpenBehavior(typeof(ValidationBehavior<,>));
+});
 
 var app = builder.Build();
 
@@ -27,9 +36,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
