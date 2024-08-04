@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using LibraryAPI.Handlers.Books.Commands.Create;
 
+
 namespace LibraryAPI.FluentValidation.Books;
 
 public class CreateBookDetailsValidation : AbstractValidator<CreateBook>

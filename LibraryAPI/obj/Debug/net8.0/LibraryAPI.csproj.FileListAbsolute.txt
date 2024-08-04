@@ -111,3 +111,11 @@ C:\Users\krvch\RiderProjects\LibraryApi\LibraryAPI\bin\Debug\net8.0\MediatR.Cont
 C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

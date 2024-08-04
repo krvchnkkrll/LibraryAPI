@@ -5,12 +5,12 @@ public class UserCommandDto
     /// <summary>
     /// Фамилия пользователя
     /// </summary>
-    public string Surname { get; set; }
+    public required string Surname { get; set; }
 
     /// <summary>
     /// Имя пользователя
     /// </summary>
-    public string Name { get; set; }
+    public required string Name { get; set; }
 
     /// <summary>
     /// Отчество пользователя, необязательное
@@ -20,12 +20,12 @@ public class UserCommandDto
     /// <summary>
     /// Логин пользователя
     /// </summary>
-    public string Login { get; set; }
+    public required string Login { get; set; }
 
     /// <summary>
     /// Пароль пользователя
     /// </summary>
-    public string Password { get; set; }
+    public required string Password { get; set; }
 
     /// <summary>
     /// Является ли пользователь сотрудником

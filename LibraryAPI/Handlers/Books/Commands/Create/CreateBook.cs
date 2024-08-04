@@ -6,7 +6,7 @@ namespace LibraryAPI.Handlers.Books.Commands.Create;
 
 public sealed record CreateBook(BookCommandDto Dto) : IRequest;
 
-file sealed class CreateBookHandler : IRequest<CreateBook>
+file sealed class CreateBookHandler : IRequestHandler<CreateBook>
 {
     private readonly LibraryInfoContext _context;
 

@@ -1,10 +1,12 @@
 using System.Reflection;
+using System.Text;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using LibraryAPI.Behaviors;
 using LibraryAPI.DbContext;
 using Microsoft.EntityFrameworkCore;
 using MediatR;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,22 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<LibraryInfoContext>(
     dbContextOptions => dbContextOptions.UseNpgsql(
         builder.Configuration.GetConnectionString("LibraryDB")));
+
+builder.Services.AddAuthentication("Bearer")
+    .AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new()
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = builder.Configuration["Authentication:Issuer"],
+                ValidAudience = builder.Configuration["Authentication:Audience"],
+                IssuerSigningKey = new SymmetricSecurityKey(
+                    Encoding.ASCII.GetBytes(builder.Configuration["Authentication:SecretForKey"]!))
+            };
+        }
+    );
 
 builder.Services.AddFluentValidationAutoValidation()
     .AddFluentValidationClientsideAdapters();

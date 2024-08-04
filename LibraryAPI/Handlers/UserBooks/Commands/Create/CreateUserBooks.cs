@@ -17,12 +17,12 @@ file sealed class CreateUserBooksHandler : IRequest<CreateUserBooks>
 
     public async Task Handle(CreateUserBooks request, CancellationToken cancellationToken)
     {
-        var userbook = new UserBook(
+        var userBook = new UserBook(
             request.Dto.UserId,
             request.Dto.BookId,
             request.Dto.DateReturn);
 
-        await _context.UserBooks.AddAsync(userbook, cancellationToken);
+        await _context.UserBooks.AddAsync(userBook, cancellationToken);
 
         await _context.SaveChangesAsync(cancellationToken);
     }
