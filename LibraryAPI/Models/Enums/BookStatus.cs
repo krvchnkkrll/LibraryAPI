@@ -9,4 +9,6 @@ public enum BookStatus
     [Display(Name = "Выдана")] Issued,
 
     [Display(Name = "Утеряна")] Lost,
-}
+    
+    [Display(Name = "Просрочена")] Overdue
+ }

@@ -12,7 +12,7 @@ public class UserBook
         BookId = bookId;
         DateReceipt = DateTime.Now;
         DateReturn = dateReturn;
-
+        BorrowPeriod = 14;
     }
 
     /// <summary>
@@ -47,6 +47,11 @@ public class UserBook
     /// </summary>
     [Required]
     public DateTime DateReceipt { get; set; }
+
+    /// <summary>
+    /// Срок выдачи
+    /// </summary>
+    public int BorrowPeriod { get; set; }
     
     /// <summary>
     /// Дата возврата книги
