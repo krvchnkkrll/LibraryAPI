@@ -34,6 +34,13 @@ builder.Services.AddAuthentication("Bearer")
         }
     );
 
+builder.Services.AddAuthorizationBuilder()
+    .AddPolicy("IsItStaff", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        policy.RequireClaim("IsIfStaff", "True");
+    });
+
 builder.Services.AddFluentValidationAutoValidation()
     .AddFluentValidationClientsideAdapters();
 

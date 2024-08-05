@@ -8,6 +8,7 @@ using LibraryAPI.Handlers.Users.Queries.GetAllUsers;
 using LibraryAPI.Handlers.Users.Queries.GetUserById;
 using LibraryAPI.Models.Enums;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryAPI.Controllers;
@@ -24,6 +25,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet("GetAllUsers")]
+    [Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> GetAllUsers(
         [FromQuery] string? surname, 
         [FromQuery] string? name, 
@@ -62,7 +64,6 @@ public class UserController : ControllerBase
         return Ok(user);
     }
     
-    
     [HttpPost("CreateUser")]
     public async Task<IActionResult> CreateUser(
         [FromBody] UserCommandDto dto,
@@ -88,6 +89,7 @@ public class UserController : ControllerBase
         return Ok("Пользователь изменен");
     }
 
+    [Authorize(Policy = "IsItStaff")]
     [HttpDelete("DeleteUser")]
     public async Task<IActionResult> DeleteUser(int id, CancellationToken cancellationToken)
     {

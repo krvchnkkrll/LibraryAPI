@@ -6,6 +6,7 @@ using LibraryAPI.Handlers.Authors.Queries;
 using LibraryAPI.Handlers.Authors.Queries.GetAllAuthors;
 using LibraryAPI.Handlers.Authors.Queries.GetAuthorById;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryAPI.Controllers;
@@ -57,9 +58,8 @@ public class AuthorsController : ControllerBase
         return Ok(author);
     }
     
-    
-    
     [HttpPost("CreateAuthor")]
+    [Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> CreateAuthor(
         [FromBody] AuthorCommandDto dto,
         CancellationToken cancellationToken)
@@ -72,6 +72,7 @@ public class AuthorsController : ControllerBase
     }
 
     [HttpPut("UpdateAuthor")]
+    [Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> UpdateAuthor(
         int id, 
         [FromBody] AuthorCommandDto dto,
@@ -84,6 +85,7 @@ public class AuthorsController : ControllerBase
         return Ok("Автор изменен");
     }
 
+    [Authorize(Policy = "IsItStaff")]
     [HttpDelete("DeleteAuthor")]
     public async Task<IActionResult> DeleteAuthor(int id, CancellationToken cancellationToken)
     {

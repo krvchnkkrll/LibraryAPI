@@ -22,7 +22,7 @@ public class AuthenticationController : ControllerBase
         CancellationToken cancellationToken)
     {
         var user = new AuthenticationUsers(dto);
-        var token = await _mediator.Send(user);
+        var token = await _mediator.Send(user, cancellationToken);
 
         if (token == null)
         {

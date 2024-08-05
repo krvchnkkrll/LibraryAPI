@@ -7,6 +7,7 @@ using LibraryAPI.Handlers.UserBooks.Queries.GetAllUserBooks;
 using LibraryAPI.Handlers.UserBooks.Queries.GetUserBookById;
 using LibraryAPI.Handlers.Users.Queries.GetUserById;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryAPI.Controllers;
@@ -48,8 +49,9 @@ public class UserBookController : ControllerBase
 
         return Ok(book);
     }
-
+    
     [HttpPost("CreateUserBook")]
+    [Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> CreateUsersBook(
         [FromBody] UserBookCommandDto dto,
         CancellationToken cancellationToken)
@@ -62,6 +64,7 @@ public class UserBookController : ControllerBase
     }
 
     [HttpPut("UpdateUserBook")]
+    [Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> UpdateUserBook(
         int id,
         [FromBody] UserBookCommandDto dto,
@@ -74,6 +77,7 @@ public class UserBookController : ControllerBase
     }
 
     [HttpDelete("DeleteUserBook")]
+    [Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> DeleteUserBook(
         int id,
         CancellationToken cancellationToken)

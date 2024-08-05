@@ -28,10 +28,10 @@ public class CreateUserDetailsValidation : AbstractValidator<CreateUser>
 
         RuleFor(x => x.Dto.Password)
             .NotEmpty().WithMessage("Пароль должен быть указан")
-            .MinimumLength(8).WithMessage("Минимальное количество символов - 3")
+            .MinimumLength(8).WithMessage("Минимальное количество символов - 8")
             .Matches(@"[A-Z]").WithMessage("Пароль должен содержать заглавную букву")
             .Matches(@"[a-z]").WithMessage("Пароль должен содержать одну строчную букву")
-            .Matches(@"х[\d]").WithMessage("Пароль должен содержать одну цифру")
+            .Matches(@"[\d]").WithMessage("Пароль должен содержать одну цифру")
             .Matches(@"[^\da-zA-z]").WithMessage("Пароль должен содержать один специальный символ");
     }
 }

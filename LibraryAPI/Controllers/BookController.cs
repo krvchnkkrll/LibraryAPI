@@ -7,6 +7,7 @@ using LibraryAPI.Handlers.Books.Queries.GetAllBooks;
 using LibraryAPI.Handlers.Books.Queries.GetBookById;
 using LibraryAPI.Models.Enums;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryAPI.Controllers;
@@ -55,7 +56,9 @@ public class BookController : ControllerBase
         return Ok(book);
     }
 
+    
     [HttpPost]
+    [Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> CreateBook(
         [FromBody] BookCommandDto dto,
         CancellationToken cancellationToken)
@@ -68,6 +71,7 @@ public class BookController : ControllerBase
     }
 
     [HttpPut]
+    [Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> UpdateBook(
         int id,
         [FromBody] BookCommandDto dto,
@@ -81,6 +85,7 @@ public class BookController : ControllerBase
     }
 
     [HttpDelete]
+    [Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> DeleteBook(
         int id,
         CancellationToken cancellationToken)

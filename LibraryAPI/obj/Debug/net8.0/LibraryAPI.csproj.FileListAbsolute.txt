@@ -119,3 +119,14 @@ C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.Id
 C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Dapper.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Hangfire.AspNetCore.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Hangfire.Core.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Hangfire.NetCore.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Hangfire.PostgreSql.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
