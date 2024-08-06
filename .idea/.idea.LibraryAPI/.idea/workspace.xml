@@ -11,7 +11,37 @@
   <component name="ChangeListManager">
     <list default="true" id="fb7d421b-beff-4f38-b48f-d8eb3d0e8baa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Models/Enums/BookStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Models/Enums/BookStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/AuthorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/AuthorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/BookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/BookController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/UserBookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/UserBookController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Commands/Update/UpdateBook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Commands/Update/UpdateBook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Commands/Create/CreateUserBooks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Commands/Create/CreateUserBooks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Commands/Update/UpdateUserBooks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Commands/Update/UpdateUserBooks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Commands/UserBookCommandDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Commands/UserBookCommandDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/GetAllUsersBooks/GetAllUserBooks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/GetAllUsersBooks/GetAllUserBooks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/GetUserBookById/GetUserBookById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/GetUserBookById/GetUserBookById.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/UserBooksQueriesDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/UserBooksQueriesDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Commands/Authentication/AuthenticationUsers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Commands/Authentication/AuthenticationUsers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Models/Entities/UserBook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Models/Entities/UserBook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/ref/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/ref/LibraryAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/refint/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/refint/LibraryAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +200,8 @@
       <workItem from="1722760105339" duration="17017000" />
       <workItem from="1722802598967" duration="715000" />
       <workItem from="1722879874430" duration="9182000" />
+      <workItem from="1722961637367" duration="150000" />
+      <workItem from="1722970048563" duration="5450000" />
     </task>
     <servers />
   </component>

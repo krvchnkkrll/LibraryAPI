@@ -36,7 +36,8 @@ file sealed class GetUserBookByIdHandler : IRequestHandler<GetUserBookById, User
             UserId = userBook.UserId,
             User = userBook.User,
             DateReturn = userBook.DateReturn,
-            DateReceipt = userBook.DateReceipt
+            DateReceipt = userBook.DateReceipt,
+            BorrowPeriod = userBook.BorrowPeriod
         };
 
         return userBookToReturn;

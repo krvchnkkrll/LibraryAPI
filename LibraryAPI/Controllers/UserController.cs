@@ -25,7 +25,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet("GetAllUsers")]
-    [Authorize(Policy = "IsItStaff")]
+    //[Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> GetAllUsers(
         [FromQuery] string? surname, 
         [FromQuery] string? name, 
@@ -89,7 +89,7 @@ public class UserController : ControllerBase
         return Ok("Пользователь изменен");
     }
 
-    [Authorize(Policy = "IsItStaff")]
+    //[Authorize(Policy = "IsItStaff")]
     [HttpDelete("DeleteUser")]
     public async Task<IActionResult> DeleteUser(int id, CancellationToken cancellationToken)
     {

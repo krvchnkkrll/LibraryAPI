@@ -38,14 +38,13 @@ public sealed class AuthenticationUsersHandler : IRequestHandler<AuthenticationU
         var securityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
         var signingCredentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-        var claimsForToken = new List<Claim>
-        {
-            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new Claim(ClaimTypes.Surname, user.Surname),
-            new Claim(ClaimTypes.Name, user.Name),
-            new Claim(ClaimTypes.GivenName, user.Patronymic ?? string.Empty),
-            new Claim(ClaimTypes.Role, user.IsItStaff.ToString())
-        };
+        var claimsForToken = new List<Claim>();
+        claimsForToken.Add(new Claim("NameIdentifier", user.Id.ToString()));
+        claimsForToken.Add(new Claim("Surname", user.Surname));
+        claimsForToken.Add(new Claim("Name", user.Name));
+        claimsForToken.Add(new Claim("Patronymic", user.Patronymic ?? string.Empty));
+        claimsForToken.Add(new Claim("IsItStaff", user.IsItStaff.ToString()));
+        
 
         var jwtSecurityToken = new JwtSecurityToken(
             _configuration["Authentication:Issuer"],

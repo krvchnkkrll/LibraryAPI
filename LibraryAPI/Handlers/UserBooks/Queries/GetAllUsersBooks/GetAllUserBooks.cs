@@ -39,7 +39,8 @@ file sealed class GetAllUserBooksHandler : IRequestHandler<GetAllUserBooks, User
                 BookId = u.BookId,
                 Book = u.Book,
                 DateReceipt = u.DateReceipt,
-                DateReturn = u.DateReturn
+                DateReturn = u.DateReturn,
+                BorrowPeriod = u.BorrowPeriod,
             })
             .ToListAsync(cancellationToken);
 

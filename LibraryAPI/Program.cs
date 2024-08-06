@@ -40,7 +40,7 @@ builder.Services.AddAuthorizationBuilder()
     .AddPolicy("IsItStaff", policy =>
     {
         policy.RequireAuthenticatedUser();
-        policy.RequireClaim("IsIfStaff", "True");
+        policy.RequireClaim("IsItStaff", "True");
     });
 
 builder.Services.AddFluentValidationAutoValidation()

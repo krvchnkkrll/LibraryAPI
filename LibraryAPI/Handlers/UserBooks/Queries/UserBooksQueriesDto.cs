@@ -35,6 +35,11 @@ public class UserBooksQueriesDto
     public DateTime DateReceipt { get; set; }
     
     /// <summary>
+    /// Срок выдачи
+    /// </summary>
+    public int BorrowPeriod { get; set; }
+    
+    /// <summary>
     /// Дата возврата книги
     /// </summary>
     public DateTime? DateReturn { get; set; }

@@ -6,7 +6,7 @@ namespace LibraryAPI.Handlers.UserBooks.Commands.Create;
 
 public sealed record CreateUserBooks(UserBookCommandDto Dto) : IRequest;
 
-file sealed class CreateUserBooksHandler : IRequest<CreateUserBooks>
+file sealed class CreateUserBooksHandler : IRequestHandler<CreateUserBooks>
 {
     private readonly LibraryInfoContext _context;
 
@@ -20,7 +20,8 @@ file sealed class CreateUserBooksHandler : IRequest<CreateUserBooks>
         var userBook = new UserBook(
             request.Dto.UserId,
             request.Dto.BookId,
-            request.Dto.DateReturn);
+            request.Dto.DateReturn,
+            request.Dto.BorrowPeriod);
 
         await _context.UserBooks.AddAsync(userBook, cancellationToken);
 

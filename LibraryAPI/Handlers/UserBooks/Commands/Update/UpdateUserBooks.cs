@@ -7,7 +7,7 @@ namespace LibraryAPI.Handlers.UserBooks.Commands.Update;
 
 public record UpdateUserBook(int Id, UserBookCommandDto Dto) : IRequest;
 
-file sealed class UpdateUserBookHandler : IRequest<UpdateBook>
+file sealed class UpdateUserBookHandler : IRequestHandler<UpdateUserBook>
 {
     private readonly LibraryInfoContext _context;
 
@@ -27,8 +27,9 @@ file sealed class UpdateUserBookHandler : IRequest<UpdateBook>
         }
         
         userBook.BookId = request.Dto.BookId;
-        userBook.DateReceipt = request.Dto.DateReceipt;
-        userBook.DateReturn = request.Dto.DateReturn;
+        userBook.DateReceipt = request.Dto.DateReceipt.ToUniversalTime();
+        userBook.DateReturn = request.Dto.DateReturn?.ToUniversalTime();
+        userBook.BorrowPeriod = request.Dto.BorrowPeriod;
 
         _context.UserBooks.Update(userBook);
 

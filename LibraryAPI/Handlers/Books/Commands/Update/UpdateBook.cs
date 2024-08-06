@@ -6,7 +6,7 @@ namespace LibraryAPI.Handlers.Books.Commands.Update;
 
 public record UpdateBook(int Id, BookCommandDto Dto) : IRequest;
 
-file sealed class UpdateBookHandler : IRequest<UpdateBook>
+file sealed class UpdateBookHandler : IRequestHandler<UpdateBook>
 {
     private readonly LibraryInfoContext _context;
 

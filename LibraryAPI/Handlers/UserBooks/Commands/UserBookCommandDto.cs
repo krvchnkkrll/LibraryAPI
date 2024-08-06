@@ -1,4 +1,5 @@
-﻿using LibraryAPI.Models.Entities;
+﻿using System.Runtime.CompilerServices;
+using LibraryAPI.Models.Entities;
 
 namespace LibraryAPI.Handlers.UserBooks.Commands;
 
@@ -18,6 +19,11 @@ public class UserBookCommandDto
     /// Дата получения книги
     /// </summary>
     public DateTime DateReceipt { get; set; }
+    
+    /// <summary>
+    /// Срок выдачи
+    /// </summary>
+    public int BorrowPeriod { get; set; }
     
     /// <summary>
     /// Дата возврата книги

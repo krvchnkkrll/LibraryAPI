@@ -57,8 +57,8 @@ public class BookController : ControllerBase
     }
 
     
-    [HttpPost]
-    [Authorize(Policy = "IsItStaff")]
+    [HttpPost("CreateBook")]
+    //[Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> CreateBook(
         [FromBody] BookCommandDto dto,
         CancellationToken cancellationToken)
@@ -70,8 +70,8 @@ public class BookController : ControllerBase
         return Ok("Книга добавлена");
     }
 
-    [HttpPut]
-    [Authorize(Policy = "IsItStaff")]
+    [HttpPut("UpdateBook")]
+    //[Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> UpdateBook(
         int id,
         [FromBody] BookCommandDto dto,
@@ -84,8 +84,8 @@ public class BookController : ControllerBase
         return Ok("Книга измена");
     }
 
-    [HttpDelete]
-    [Authorize(Policy = "IsItStaff")]
+    [HttpDelete("DeleteBook")]
+    //[Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> DeleteBook(
         int id,
         CancellationToken cancellationToken)

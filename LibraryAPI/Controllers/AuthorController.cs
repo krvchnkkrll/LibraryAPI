@@ -59,7 +59,7 @@ public class AuthorsController : ControllerBase
     }
     
     [HttpPost("CreateAuthor")]
-    [Authorize(Policy = "IsItStaff")]
+    //[Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> CreateAuthor(
         [FromBody] AuthorCommandDto dto,
         CancellationToken cancellationToken)
@@ -72,7 +72,7 @@ public class AuthorsController : ControllerBase
     }
 
     [HttpPut("UpdateAuthor")]
-    [Authorize(Policy = "IsItStaff")]
+    //[Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> UpdateAuthor(
         int id, 
         [FromBody] AuthorCommandDto dto,
@@ -85,7 +85,7 @@ public class AuthorsController : ControllerBase
         return Ok("Автор изменен");
     }
 
-    [Authorize(Policy = "IsItStaff")]
+    //[Authorize(Policy = "IsItStaff")]
     [HttpDelete("DeleteAuthor")]
     public async Task<IActionResult> DeleteAuthor(int id, CancellationToken cancellationToken)
     {

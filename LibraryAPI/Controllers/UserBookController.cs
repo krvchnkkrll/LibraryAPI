@@ -14,6 +14,7 @@ namespace LibraryAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+
 public class UserBookController : ControllerBase
 { 
     private readonly IMediator _mediator;
@@ -51,7 +52,7 @@ public class UserBookController : ControllerBase
     }
     
     [HttpPost("CreateUserBook")]
-    [Authorize(Policy = "IsItStaff")]
+    //[Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> CreateUsersBook(
         [FromBody] UserBookCommandDto dto,
         CancellationToken cancellationToken)
@@ -64,7 +65,7 @@ public class UserBookController : ControllerBase
     }
 
     [HttpPut("UpdateUserBook")]
-    [Authorize(Policy = "IsItStaff")]
+    //[Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> UpdateUserBook(
         int id,
         [FromBody] UserBookCommandDto dto,
@@ -77,7 +78,7 @@ public class UserBookController : ControllerBase
     }
 
     [HttpDelete("DeleteUserBook")]
-    [Authorize(Policy = "IsItStaff")]
+    //[Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> DeleteUserBook(
         int id,
         CancellationToken cancellationToken)
