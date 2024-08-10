@@ -9,6 +9,7 @@ using MediatR;
 using Microsoft.IdentityModel.Tokens;
 using Hangfire;
 using Hangfire.PostgreSql;
+using LibraryAPI.Services.Hangfire;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -54,7 +55,6 @@ builder.Services.AddMediatR(cfg =>
     cfg.AddOpenBehavior(typeof(ValidationBehavior<,>));
 });
 
-
 builder.Services.AddHangfire(configuration => configuration
     .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
     .UseSimpleAssemblyNameTypeSerializer()
@@ -62,6 +62,8 @@ builder.Services.AddHangfire(configuration => configuration
     .UsePostgreSqlStorage(builder.Configuration.GetConnectionString("HangfireConnection")));
 
 builder.Services.AddHangfireServer();
+builder.Services.AddTransient<UserBookService>();
+builder.Services.AddTransient<BookService>();
 
 var app = builder.Build();
 
@@ -75,9 +77,10 @@ app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
 
-
-
 app.MapControllers();
 app.MapHangfireDashboard();
+
+var recurringJobs = app.Services.GetRequiredService<IRecurringJobManager>();
+recurringJobs.ConfigureRecurringJobs(app.Services);
 
 app.Run();
