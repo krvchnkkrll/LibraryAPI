@@ -17,12 +17,14 @@ file sealed class GetBookByIdHandler : IRequestHandler<GetBookById, BooksQueries
 
     public async Task<BooksQueriesDto> Handle(GetBookById request, CancellationToken cancellationToken)
     {
+        
+        
         var book = await _context.Books.Include(book => book.Author).FirstOrDefaultAsync(
             b => b.Id == request.Id, cancellationToken);
 
         if (book == null)
         {
-            throw new KeyNotFoundException($"Книга с индексом {request.Id} не найдена");
+            throw new KeyNotFoundException();
         }
 
         var bookToReturn = new BooksQueriesDto()

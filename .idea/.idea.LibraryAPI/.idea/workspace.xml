@@ -11,21 +11,36 @@
   <component name="ChangeListManager">
     <list default="true" id="fb7d421b-beff-4f38-b48f-d8eb3d0e8baa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/BookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/BookController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Queries/GetBookById/GetBookById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Queries/GetBookById/GetBookById.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/LibraryAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/LibraryAPI.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Services/Hangfire/BookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Services/Hangfire/BookService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Services/Hangfire/UserBookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Services/Hangfire/UserBookService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/ref/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/ref/LibraryAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/refint/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/refint/LibraryAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +57,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="UpdateDBLogic+HangfireJob" />
       </map>
     </option>
   </component>
@@ -182,6 +197,13 @@
       <workItem from="1722980860053" duration="419000" />
       <workItem from="1723053467693" duration="6323000" />
       <workItem from="1723290788763" duration="1787000" />
+      <workItem from="1723576281130" duration="3770000" />
+      <workItem from="1723659576259" duration="4506000" />
+      <workItem from="1723828275553" duration="185000" />
+      <workItem from="1724001733820" duration="3143000" />
+      <workItem from="1724089906234" duration="306000" />
+      <workItem from="1724095953412" duration="5112000" />
+      <workItem from="1724184260497" duration="647000" />
     </task>
     <servers />
   </component>
@@ -190,6 +212,26 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="UpdateDBLogic+HangfireJob" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">

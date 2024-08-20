@@ -5,13 +5,21 @@ using FluentValidation.AspNetCore;
 using LibraryAPI.Behaviors;
 using LibraryAPI.DbContext;
 using Microsoft.EntityFrameworkCore;
-using MediatR;
+using LibraryAPI.Services.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Hangfire;
 using Hangfire.PostgreSql;
 using LibraryAPI.Services.Hangfire;
+using Serilog; 
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .Enrich.FromLogContext()
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -76,9 +84,12 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
+app.UseMiddleware<LoggingMiddleware>();
 
 app.MapControllers();
 app.MapHangfireDashboard();
+app.Lifetime.ApplicationStopped.Register(Log.CloseAndFlush);
+
 
 var recurringJobs = app.Services.GetRequiredService<IRecurringJobManager>();
 recurringJobs.ConfigureRecurringJobs(app.Services);

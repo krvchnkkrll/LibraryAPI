@@ -130,3 +130,14 @@ C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Hangfire.Cor
 C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Hangfire.NetCore.dll
 C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Hangfire.PostgreSql.dll
 C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Serilog.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\Serilog.Sinks.Seq.dll
+C:\Users\krvch\RiderProjects\LibraryAPI\LibraryAPI\bin\Debug\net8.0\System.Text.Json.dll

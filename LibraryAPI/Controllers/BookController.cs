@@ -17,12 +17,16 @@ namespace LibraryAPI.Controllers;
 public class BookController : ControllerBase
 {
     private readonly IMediator _mediator;
+    private readonly ILogger<BookController> _logger;
     
-    public BookController(IMediator mediator)
+    public BookController(IMediator mediator, ILogger<BookController> logger)
     {
         _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
-
+    
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     [HttpGet("GetAllBooks")]
     public async Task<IActionResult> GetAllBooks(
         [FromQuery] string? name,
@@ -32,42 +36,74 @@ public class BookController : ControllerBase
         [FromQuery] int? pageSize,
         CancellationToken cancellationToken)
     {
-        var query = new GetAllBooks(
-            name,
-            genre,
-            bookStatus,
-            pageNumber ?? 1,
-            pageSize ?? 10);
+        try
+        {
+            var query = new GetAllBooks(
+                name,
+                genre,
+                bookStatus,
+                pageNumber ?? 1,
+                pageSize ?? 10);
 
-        var books = await _mediator.Send(query, cancellationToken);
-
-        return Ok(books);
+            var books = await _mediator.Send(query, cancellationToken);
+       
+            return Ok(books);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
+        
     }
 
     [HttpGet("GetBookById")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetBookById(
         [FromQuery] int id,
         CancellationToken cancellationToken)
     {
-        var query = new GetBookById(id);
+        try
+        {
+            var query = new GetBookById(id);
 
-        var book = await _mediator.Send(query, cancellationToken);
-
-        return Ok(book);
+            var book = await _mediator.Send(query, cancellationToken);
+            
+            return Ok(book);
+        }
+        
+        catch (KeyNotFoundException)
+        {
+            return NotFound();
+        }
+        
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
     
     [HttpPost("CreateBook")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     //[Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> CreateBook(
         [FromBody] BookCommandDto dto,
         CancellationToken cancellationToken)
     {
-        var book = new CreateBook(dto);
+        try
+        {
+            var book = new CreateBook(dto);
 
-        await _mediator.Send(book, cancellationToken);
+            await _mediator.Send(book, cancellationToken);
 
-        return Ok("Книга добавлена");
+            return Ok("Книга добавлена");
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
+        
     }
 
     [HttpPut("UpdateBook")]
@@ -77,22 +113,41 @@ public class BookController : ControllerBase
         [FromBody] BookCommandDto dto,
         CancellationToken cancellationToken)
     {
-        var book = new UpdateBook(id, dto);
+        try
+        {
+            var book = new UpdateBook(id, dto);
 
-        await _mediator.Send(book, cancellationToken);
+            await _mediator.Send(book, cancellationToken);
 
-        return Ok("Книга измена");
+            return Ok("Книга измена");
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
+    
     [HttpDelete("DeleteBook")]
     //[Authorize(Policy = "IsItStaff")]
     public async Task<IActionResult> DeleteBook(
         int id,
         CancellationToken cancellationToken)
     {
-        await _mediator.Send(new DeleteBook(id), cancellationToken);
-
-        return NoContent();
+        try
+        {
+            await _mediator.Send(new DeleteBook(id), cancellationToken);
+            return Ok("Книга удалена");
+        }
+        catch (KeyNotFoundException)
+        {
+            return NotFound("Запись не найдена");
+        }
+        
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
     
 }
