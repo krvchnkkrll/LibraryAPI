@@ -32,18 +32,25 @@ public class AuthorsController : ControllerBase
         [FromQuery] int? pageSize,
         CancellationToken cancellationToken)
     {
-        var query = new GetAllAuthors(
-            surname,
-            name,
-            patronymic,
-            searchQuery,
-            pageNumber ?? 1,
-            pageSize ?? 10
-        );
+        try
+        {
+            var query = new GetAllAuthors(
+                surname,
+                name,
+                patronymic,
+                searchQuery,
+                pageNumber ?? 1,
+                pageSize ?? 10
+            );
         
-        var authors = await _mediator.Send(query, cancellationToken);
+            var authors = await _mediator.Send(query, cancellationToken);
         
-        return Ok(authors);
+            return Ok(authors);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
     [HttpGet("GetAuthorById")]
@@ -51,11 +58,23 @@ public class AuthorsController : ControllerBase
         [FromQuery] int id,
         CancellationToken cancellationToken)
     {
-        var query = new GetAuthorById(id);
+        try
+        {
+            var query = new GetAuthorById(id);
 
-        var author = await _mediator.Send(query, cancellationToken);
+            var author = await _mediator.Send(query, cancellationToken);
 
-        return Ok(author);
+            return Ok(author);
+        }
+
+        catch (KeyNotFoundException)
+        {
+            return NotFound();
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
     
     [HttpPost("CreateAuthor")]
@@ -64,11 +83,18 @@ public class AuthorsController : ControllerBase
         [FromBody] AuthorCommandDto dto,
         CancellationToken cancellationToken)
     {
-        var author = new CreateAuthor(dto);
+        try
+        {
+            var author = new CreateAuthor(dto);
 
-        await _mediator.Send(author, cancellationToken);
+            await _mediator.Send(author, cancellationToken);
 
-        return Ok("Автор добавлен");
+            return Ok("Автор добавлен");
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
     [HttpPut("UpdateAuthor")]
@@ -78,19 +104,33 @@ public class AuthorsController : ControllerBase
         [FromBody] AuthorCommandDto dto,
         CancellationToken cancellationToken)
     {
-        var author = new UpdateAuthor(id, dto);
+        try
+        {
+            var author = new UpdateAuthor(id, dto);
 
-        await _mediator.Send(author, cancellationToken);
+            await _mediator.Send(author, cancellationToken);
 
-        return Ok("Автор изменен");
+            return Ok("Автор изменен");
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
     //[Authorize(Policy = "IsItStaff")]
     [HttpDelete("DeleteAuthor")]
     public async Task<IActionResult> DeleteAuthor(int id, CancellationToken cancellationToken)
     {
-        await _mediator.Send(new DeleteAuthor(id), cancellationToken);
+        try
+        {
+            await _mediator.Send(new DeleteAuthor(id), cancellationToken);
         
-        return NoContent();
+            return Ok("Автор удален");
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 }

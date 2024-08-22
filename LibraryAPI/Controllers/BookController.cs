@@ -17,12 +17,10 @@ namespace LibraryAPI.Controllers;
 public class BookController : ControllerBase
 {
     private readonly IMediator _mediator;
-    private readonly ILogger<BookController> _logger;
     
     public BookController(IMediator mediator, ILogger<BookController> logger)
     {
         _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
-        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
     
     [ProducesResponseType(StatusCodes.Status200OK)]
@@ -49,6 +47,7 @@ public class BookController : ControllerBase
        
             return Ok(books);
         }
+        
         catch (Exception e)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
@@ -99,6 +98,7 @@ public class BookController : ControllerBase
 
             return Ok("Книга добавлена");
         }
+        
         catch (Exception e)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
@@ -121,6 +121,7 @@ public class BookController : ControllerBase
 
             return Ok("Книга измена");
         }
+        
         catch (Exception e)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
@@ -139,6 +140,7 @@ public class BookController : ControllerBase
             await _mediator.Send(new DeleteBook(id), cancellationToken);
             return Ok("Книга удалена");
         }
+        
         catch (KeyNotFoundException)
         {
             return NotFound("Запись не найдена");

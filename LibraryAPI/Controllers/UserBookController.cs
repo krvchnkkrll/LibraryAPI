@@ -30,13 +30,20 @@ public class UserBookController : ControllerBase
         [FromQuery] int? pageSize, 
         CancellationToken cancellationToken)
     {
-        var query = new GetAllUserBooks(
-            pageNumber ?? 1,
-            pageSize ?? 10);
+        try
+        {
+            var query = new GetAllUserBooks(
+                pageNumber ?? 1,
+                pageSize ?? 10);
 
-        var usersBook = await _mediator.Send(query, cancellationToken);
+            var usersBook = await _mediator.Send(query, cancellationToken);
 
-        return Ok(usersBook);
+            return Ok(usersBook);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
     [HttpGet("GetUserBookById")]
@@ -44,11 +51,22 @@ public class UserBookController : ControllerBase
         [FromQuery] int id,
         CancellationToken cancellationToken)
     {
-        var query = new GetUserBookById(id);
+        try
+        {
+            var query = new GetUserBookById(id);
 
-        var book = await _mediator.Send(query, cancellationToken);
+            var book = await _mediator.Send(query, cancellationToken);
 
-        return Ok(book);
+            return Ok(book);
+        }
+        catch (KeyNotFoundException)
+        {
+            return NotFound();
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
     
     [HttpPost("CreateUserBook")]
@@ -57,11 +75,18 @@ public class UserBookController : ControllerBase
         [FromBody] UserBookCommandDto dto,
         CancellationToken cancellationToken)
     {
-        var userBook = new CreateUserBooks(dto);
+        try
+        {
+            var userBook = new CreateUserBooks(dto);
 
-        await _mediator.Send(userBook, cancellationToken);
+            await _mediator.Send(userBook, cancellationToken);
 
-        return Ok("Книга пользователя добавлена");
+            return Ok("Книга пользователя добавлена");
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
     [HttpPut("UpdateUserBook")]
@@ -69,12 +94,20 @@ public class UserBookController : ControllerBase
     public async Task<IActionResult> UpdateUserBook(
         int id,
         [FromBody] UserBookCommandDto dto,
-        CancellationToken cancellationToken) {
-        var userBook = new UpdateUserBook(id, dto);
+        CancellationToken cancellationToken) 
+    {
+        try
+        {
+            var userBook = new UpdateUserBook(id, dto);
 
-        await _mediator.Send(userBook, cancellationToken);
+            await _mediator.Send(userBook, cancellationToken);
 
-        return Ok("Книга пользователя изменена");
+            return Ok("Книга пользователя изменена");
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
     [HttpDelete("DeleteUserBook")]
@@ -83,8 +116,21 @@ public class UserBookController : ControllerBase
         int id,
         CancellationToken cancellationToken)
     {
-        await _mediator.Send(new DeleteUserBook(id), cancellationToken);
+        try
+        {
+            await _mediator.Send(new DeleteUserBook(id), cancellationToken);
 
-        return NoContent();
+            return Ok("Книга ползоваеля удалена");
+        }
+
+        catch (KeyNotFoundException)
+        {
+            return NotFound("Запись не найдена");
+        }
+        
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 }

@@ -36,20 +36,27 @@ public class UserController : ControllerBase
         [FromQuery] int? pageSize,
         CancellationToken cancellationToken)
     {
+        try
+        {
+            var query = new GetAllUsers(
+                surname,
+                name,
+                patronymic,
+                isItStaff,
+                searchQuery,
+                pageNumber ?? 1, 
+                pageSize ?? 10
+            );
         
-        var query = new GetAllUsers(
-            surname,
-            name,
-            patronymic,
-            isItStaff,
-            searchQuery,
-            pageNumber ?? 1, 
-            pageSize ?? 10
-        );
+            var user = await _mediator.Send(query, cancellationToken);
         
-        var user = await _mediator.Send(query, cancellationToken);
+            return Ok(user);
+        }
         
-        return Ok(user);
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
     [HttpGet("GetUserById")]
@@ -57,11 +64,24 @@ public class UserController : ControllerBase
         [FromQuery] int id,
         CancellationToken cancellationToken)
     {
-        var query = new GetUserById(id);
+        try
+        {
+            var query = new GetUserById(id);
 
-        var user = await _mediator.Send(query, cancellationToken);
+            var user = await _mediator.Send(query, cancellationToken);
 
-        return Ok(user);
+            return Ok(user);
+        }
+        
+        catch (KeyNotFoundException)
+        {
+            return NotFound();
+        }
+        
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
     
     [HttpPost("CreateUser")]
@@ -69,11 +89,19 @@ public class UserController : ControllerBase
         [FromBody] UserCommandDto dto,
         CancellationToken cancellationToken)
     {
-        var user = new CreateUser(dto);
+        try
+        {
+            var user = new CreateUser(dto);
 
-        await _mediator.Send(user, cancellationToken);
+            await _mediator.Send(user, cancellationToken);
 
-        return Ok("Пользователь добавлен");
+            return Ok("Пользователь добавлен");
+        }
+        
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
     [HttpPut("UpdateUser")]
@@ -82,19 +110,40 @@ public class UserController : ControllerBase
         [FromBody] UserCommandDto dto,
         CancellationToken cancellationToken)
     {
-        var user = new UpdateUser(id, dto);
+        try
+        {
+            var user = new UpdateUser(id, dto);
 
-        await _mediator.Send(user, cancellationToken);
+            await _mediator.Send(user, cancellationToken);
 
-        return Ok("Пользователь изменен");
+            return Ok("Пользователь изменен");
+        }
+        
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
     //[Authorize(Policy = "IsItStaff")]
     [HttpDelete("DeleteUser")]
     public async Task<IActionResult> DeleteUser(int id, CancellationToken cancellationToken)
     {
-        await _mediator.Send(new DeleteUser(id), cancellationToken);
+        try
+        {
+            await _mediator.Send(new DeleteUser(id), cancellationToken);
 
-        return NoContent();
+            return Ok("Пользоваель удален");
+        }
+        
+        catch (KeyNotFoundException)
+        {
+            return NotFound("Запись не найдена");
+        }
+        
+        catch (Exception e)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 }
