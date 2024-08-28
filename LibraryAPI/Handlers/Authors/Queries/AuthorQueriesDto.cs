@@ -1,10 +1,13 @@
-﻿namespace LibraryAPI.Handlers.Authors.Queries;
+﻿using System.Text.Json.Serialization;
+
+namespace LibraryAPI.Handlers.Authors.Queries;
 
 public class AuthorQueriesDto
 {
     /// <summary>
     /// Уникальный идентификатор автора
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
     public int Id { get; set; }
 
     /// <summary>

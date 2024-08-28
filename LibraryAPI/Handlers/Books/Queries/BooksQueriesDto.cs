@@ -1,4 +1,6 @@
-﻿using LibraryAPI.Models.Entities;
+﻿using System.Text.Json.Serialization;
+using LibraryAPI.Handlers.Authors.Queries;
+using LibraryAPI.Models.Entities;
 using LibraryAPI.Models.Enums;
 
 namespace LibraryAPI.Handlers.Books.Queries;
@@ -8,6 +10,7 @@ public class BooksQueriesDto
     /// <summary>
     /// Уникальный идентификатор книги
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
     public int Id { get; set; }
 
     /// <summary>
@@ -21,14 +24,16 @@ public class BooksQueriesDto
     public Genre Genre { get; set; }
     
     /// <summary>
-    /// Автор
-    /// </summary>
-    public Author? Author { get; set; }
-    
-    /// <summary>
     /// Уникальный идентификатор автора
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
     public int AuthorId { get; set; }
+    
+    /// <summary>
+    /// Автор
+    /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+    public AuthorQueriesDto? Author { get; set; }
     
     /// <summary>
     /// Статус книги

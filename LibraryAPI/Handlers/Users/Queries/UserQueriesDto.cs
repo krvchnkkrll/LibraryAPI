@@ -1,10 +1,13 @@
-﻿namespace LibraryAPI.Handlers.Users.Queries;
+﻿using System.Text.Json.Serialization;
+
+namespace LibraryAPI.Handlers.Users.Queries;
 
 public class UserQueriesDto
 {
     /// <summary>
     /// Уникальный идентификатор пользователя
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
     public int Id { get; set; }
 
     /// <summary>
@@ -25,15 +28,18 @@ public class UserQueriesDto
     /// <summary>
     /// Логин пользователя
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
     public string Login { get; set; }
 
     /// <summary>
     /// Пароль пользователя
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
     public string Password { get; set; }
 
     /// <summary>
     /// Является ли пользователь сотрудником
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
     public bool IsItStaff { get; set; } = false;
 }

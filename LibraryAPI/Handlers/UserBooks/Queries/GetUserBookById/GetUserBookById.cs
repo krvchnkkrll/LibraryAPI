@@ -1,5 +1,6 @@
 ﻿using LibraryAPI.DbContext;
 using LibraryAPI.Handlers.Books.Queries;
+using LibraryAPI.Handlers.Users.Queries;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -31,10 +32,20 @@ file sealed class GetUserBookByIdHandler : IRequestHandler<GetUserBookById, User
         var userBookToReturn = new UserBooksQueriesDto()
         {
             Id = userBook.Id,
-            BookId = userBook.BookId,
-            Book = userBook.Book,
             UserId = userBook.UserId,
-            User = userBook.User,
+            User = new UserQueriesDto
+            {
+                Surname = userBook.User!.Surname,
+                Name = userBook.User.Name,
+                Patronymic = userBook.User.Patronymic
+            },
+            BookId = userBook.BookId,
+            Book = new BooksQueriesDto
+            {
+                Name = userBook.Book!.Name,
+                Genre = userBook.Book.Genre,
+                BookStatus = userBook.Book.BookStatus,
+            },
             DateReturn = userBook.DateReturn,
             DateReceipt = userBook.DateReceipt,
             BorrowPeriod = userBook.BorrowPeriod

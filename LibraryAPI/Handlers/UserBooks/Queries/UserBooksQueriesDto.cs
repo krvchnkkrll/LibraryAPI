@@ -1,33 +1,37 @@
-﻿using LibraryAPI.Models.Entities;
+﻿using System.Text.Json.Serialization;
+using LibraryAPI.Handlers.Books.Queries;
+using LibraryAPI.Handlers.Users.Queries;
+using LibraryAPI.Models.Entities;
 
 namespace LibraryAPI.Handlers.UserBooks.Queries;
 
 public class UserBooksQueriesDto
 {
+    
     /// <summary>
     /// Идентификатор записи выдачи книги пользователю
     /// </summary>
     public int Id { get; set; }
     
     /// <summary>
-    /// Пользователь получивший книгу
-    /// </summary>
-    public User? User { get; set; }
-    
-    /// <summary>
     /// Уникальный идентификатор пользователя получившего книгу
     /// </summary>
     public int UserId { get; set; }
-
+    
     /// <summary>
-    /// Книга, которую забрал пользователь
+    /// Пользователь получивший книгу
     /// </summary>
-    public Book? Book { get; set; }
+    public UserQueriesDto? User { get; set; }
     
     /// <summary>
     /// Идентификатор книги
     /// </summary>
     public int BookId { get; set; }
+    
+    /// <summary>
+    /// Книга, которую забрал пользователь
+    /// </summary>
+    public BooksQueriesDto? Book { get; set; }
     
     /// <summary>
     /// Дата получения книги

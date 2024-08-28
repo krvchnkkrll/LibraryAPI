@@ -1,0 +1,347 @@
+2024-08-28 20:30:27.965 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 20:30:28.058 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 20:30:28.690 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 20:30:28.691 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 20:30:28.691 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 20:30:28.691 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 20:30:28.691 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 20:30:28.691 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 20:30:28.728 +03:00 [Information] Server desktop-hi79j2q:14224:c67be408 successfully announced in 10,0748 ms
+2024-08-28 20:30:28.730 +03:00 [Information] Server desktop-hi79j2q:14224:c67be408 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 20:30:28.733 +03:00 [Information] Server desktop-hi79j2q:14224:c67be408 all the dispatchers started
+2024-08-28 20:30:28.851 +03:00 [Information] Removed 1 outdated record(s) from 'aggregatedcounter' table.
+2024-08-28 20:30:29.865 +03:00 [Information] Removed 1 outdated record(s) from 'job' table.
+2024-08-28 20:30:39.393 +03:00 [Information] Запрос: "GET" "/api/Book/GetAllBooks", параметры: "none", тело запроса ""
+2024-08-28 20:30:39.552 +03:00 [Information] Запрос "GET" "/api/Book/GetAllBooks" выполнен
+2024-08-28 20:31:34.834 +03:00 [Information] Server desktop-hi79j2q:14224:c67be408 caught stopping signal...
+2024-08-28 20:31:34.837 +03:00 [Information] Server desktop-hi79j2q:14224:c67be408 All dispatchers stopped
+2024-08-28 20:31:34.840 +03:00 [Information] Server desktop-hi79j2q:14224:c67be408 successfully reported itself as stopped in 1,8475 ms
+2024-08-28 20:31:34.840 +03:00 [Information] Server desktop-hi79j2q:14224:c67be408 has been stopped in total 5,3811 ms
+2024-08-28 20:31:38.396 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 20:31:38.472 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 20:31:38.678 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 20:31:38.679 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 20:31:38.679 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 20:31:38.679 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 20:31:38.679 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 20:31:38.679 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 20:31:38.698 +03:00 [Information] Server desktop-hi79j2q:19868:7c280a64 successfully announced in 8,5806 ms
+2024-08-28 20:31:38.700 +03:00 [Information] Server desktop-hi79j2q:19868:7c280a64 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 20:31:38.703 +03:00 [Information] Server desktop-hi79j2q:19868:7c280a64 all the dispatchers started
+2024-08-28 20:31:42.931 +03:00 [Information] Запрос: "GET" "/api/Book/GetAllBooks", параметры: "none", тело запроса ""
+2024-08-28 20:31:43.867 +03:00 [Information] Запрос "GET" "/api/Book/GetAllBooks" выполнен
+2024-08-28 20:48:42.152 +03:00 [Information] Server desktop-hi79j2q:19868:7c280a64 caught stopping signal...
+2024-08-28 20:48:42.156 +03:00 [Information] Server desktop-hi79j2q:19868:7c280a64 All dispatchers stopped
+2024-08-28 20:48:42.167 +03:00 [Information] Server desktop-hi79j2q:19868:7c280a64 successfully reported itself as stopped in 9,4643 ms
+2024-08-28 20:48:42.167 +03:00 [Information] Server desktop-hi79j2q:19868:7c280a64 has been stopped in total 13,6497 ms
+2024-08-28 20:48:46.657 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 20:48:46.720 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 20:48:46.933 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 20:48:46.933 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 20:48:46.933 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 20:48:46.933 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 20:48:46.933 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 20:48:46.933 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 20:48:46.950 +03:00 [Information] Server desktop-hi79j2q:21084:527be02d successfully announced in 8,4236 ms
+2024-08-28 20:48:46.952 +03:00 [Information] Server desktop-hi79j2q:21084:527be02d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 20:48:46.956 +03:00 [Information] Server desktop-hi79j2q:21084:527be02d all the dispatchers started
+2024-08-28 20:48:52.294 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 20:48:53.242 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 20:50:38.602 +03:00 [Information] Server desktop-hi79j2q:21084:527be02d caught stopping signal...
+2024-08-28 20:50:38.605 +03:00 [Information] Server desktop-hi79j2q:21084:527be02d All dispatchers stopped
+2024-08-28 20:50:38.609 +03:00 [Information] Server desktop-hi79j2q:21084:527be02d successfully reported itself as stopped in 2,1299 ms
+2024-08-28 20:50:38.609 +03:00 [Information] Server desktop-hi79j2q:21084:527be02d has been stopped in total 6,2978 ms
+2024-08-28 20:50:42.114 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 20:50:42.193 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 20:50:42.410 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 20:50:42.410 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 20:50:42.411 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 20:50:42.411 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 20:50:42.411 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 20:50:42.411 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 20:50:42.428 +03:00 [Information] Server desktop-hi79j2q:23512:6f9153c7 successfully announced in 8,3189 ms
+2024-08-28 20:50:42.431 +03:00 [Information] Server desktop-hi79j2q:23512:6f9153c7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 20:50:42.434 +03:00 [Information] Server desktop-hi79j2q:23512:6f9153c7 all the dispatchers started
+2024-08-28 20:50:50.975 +03:00 [Information] Server desktop-hi79j2q:23512:6f9153c7 caught stopping signal...
+2024-08-28 20:50:50.979 +03:00 [Information] Server desktop-hi79j2q:23512:6f9153c7 All dispatchers stopped
+2024-08-28 20:50:50.983 +03:00 [Information] Server desktop-hi79j2q:23512:6f9153c7 successfully reported itself as stopped in 3,1995 ms
+2024-08-28 20:50:50.983 +03:00 [Information] Server desktop-hi79j2q:23512:6f9153c7 has been stopped in total 7,1278 ms
+2024-08-28 20:50:54.322 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 20:50:54.390 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 20:50:54.592 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 20:50:54.593 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 20:50:54.593 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 20:50:54.593 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 20:50:54.593 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 20:50:54.593 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 20:50:54.610 +03:00 [Information] Server desktop-hi79j2q:17364:2f1e9464 successfully announced in 8,5268 ms
+2024-08-28 20:50:54.613 +03:00 [Information] Server desktop-hi79j2q:17364:2f1e9464 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 20:50:54.616 +03:00 [Information] Server desktop-hi79j2q:17364:2f1e9464 all the dispatchers started
+2024-08-28 20:51:02.457 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 20:51:03.413 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 20:51:36.276 +03:00 [Information] Server desktop-hi79j2q:17364:2f1e9464 caught stopping signal...
+2024-08-28 20:51:36.280 +03:00 [Information] Server desktop-hi79j2q:17364:2f1e9464 All dispatchers stopped
+2024-08-28 20:51:36.284 +03:00 [Information] Server desktop-hi79j2q:17364:2f1e9464 successfully reported itself as stopped in 3,4126 ms
+2024-08-28 20:51:36.284 +03:00 [Information] Server desktop-hi79j2q:17364:2f1e9464 has been stopped in total 7,4227 ms
+2024-08-28 20:51:42.450 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 20:51:42.514 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 20:51:42.695 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 20:51:42.695 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 20:51:42.695 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 20:51:42.695 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 20:51:42.695 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 20:51:42.695 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 20:51:42.712 +03:00 [Information] Server desktop-hi79j2q:16024:3bb5e9da successfully announced in 8,4254 ms
+2024-08-28 20:51:42.714 +03:00 [Information] Server desktop-hi79j2q:16024:3bb5e9da is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 20:51:42.718 +03:00 [Information] Server desktop-hi79j2q:16024:3bb5e9da all the dispatchers started
+2024-08-28 20:51:48.127 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 20:51:49.071 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 20:54:23.293 +03:00 [Information] Запрос: "GET" "/api/Book/GetAllBooks", параметры: "none", тело запроса ""
+2024-08-28 20:54:23.323 +03:00 [Information] Запрос "GET" "/api/Book/GetAllBooks" выполнен
+2024-08-28 20:56:25.072 +03:00 [Information] Server desktop-hi79j2q:16024:3bb5e9da caught stopping signal...
+2024-08-28 20:56:25.075 +03:00 [Information] Server desktop-hi79j2q:16024:3bb5e9da All dispatchers stopped
+2024-08-28 20:56:25.079 +03:00 [Information] Server desktop-hi79j2q:16024:3bb5e9da successfully reported itself as stopped in 2,1547 ms
+2024-08-28 20:56:25.079 +03:00 [Information] Server desktop-hi79j2q:16024:3bb5e9da has been stopped in total 6,6878 ms
+2024-08-28 20:56:28.542 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 20:56:28.627 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 20:56:28.841 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 20:56:28.841 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 20:56:28.841 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 20:56:28.841 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 20:56:28.841 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 20:56:28.841 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 20:56:28.859 +03:00 [Information] Server desktop-hi79j2q:7144:837597cf successfully announced in 8,0864 ms
+2024-08-28 20:56:28.862 +03:00 [Information] Server desktop-hi79j2q:7144:837597cf is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 20:56:28.865 +03:00 [Information] Server desktop-hi79j2q:7144:837597cf all the dispatchers started
+2024-08-28 20:56:34.065 +03:00 [Information] Запрос: "GET" "/api/User/GetAllUsers", параметры: "none", тело запроса ""
+2024-08-28 20:56:34.960 +03:00 [Information] Запрос "GET" "/api/User/GetAllUsers" выполнен
+2024-08-28 20:56:41.765 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 20:56:41.858 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 21:00:52.211 +03:00 [Information] Server desktop-hi79j2q:7144:837597cf caught stopping signal...
+2024-08-28 21:00:52.214 +03:00 [Information] Server desktop-hi79j2q:7144:837597cf All dispatchers stopped
+2024-08-28 21:00:52.219 +03:00 [Information] Server desktop-hi79j2q:7144:837597cf successfully reported itself as stopped in 2,4004 ms
+2024-08-28 21:00:52.220 +03:00 [Information] Server desktop-hi79j2q:7144:837597cf has been stopped in total 8,1028 ms
+2024-08-28 21:00:55.481 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 21:00:55.555 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 21:00:55.749 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 21:00:55.749 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 21:00:55.749 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 21:00:55.749 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 21:00:55.749 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 21:00:55.749 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 21:00:55.767 +03:00 [Information] Server desktop-hi79j2q:6756:783c0f09 successfully announced in 8,6306 ms
+2024-08-28 21:00:55.770 +03:00 [Information] Server desktop-hi79j2q:6756:783c0f09 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 21:00:55.773 +03:00 [Information] Server desktop-hi79j2q:6756:783c0f09 all the dispatchers started
+2024-08-28 21:01:00.976 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 21:01:01.991 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 21:01:15.265 +03:00 [Information] Server desktop-hi79j2q:6756:783c0f09 caught stopping signal...
+2024-08-28 21:01:15.269 +03:00 [Information] Server desktop-hi79j2q:6756:783c0f09 All dispatchers stopped
+2024-08-28 21:01:15.273 +03:00 [Information] Server desktop-hi79j2q:6756:783c0f09 successfully reported itself as stopped in 2,4705 ms
+2024-08-28 21:01:15.273 +03:00 [Information] Server desktop-hi79j2q:6756:783c0f09 has been stopped in total 7,0748 ms
+2024-08-28 21:01:18.513 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 21:01:18.580 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 21:01:18.773 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 21:01:18.773 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 21:01:18.773 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 21:01:18.773 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 21:01:18.773 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 21:01:18.773 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 21:01:18.791 +03:00 [Information] Server desktop-hi79j2q:20860:b009c41a successfully announced in 8,4116 ms
+2024-08-28 21:01:18.793 +03:00 [Information] Server desktop-hi79j2q:20860:b009c41a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 21:01:18.797 +03:00 [Information] Server desktop-hi79j2q:20860:b009c41a all the dispatchers started
+2024-08-28 21:01:23.518 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 21:01:24.526 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 21:02:31.577 +03:00 [Information] Server desktop-hi79j2q:20860:b009c41a caught stopping signal...
+2024-08-28 21:02:31.581 +03:00 [Information] Server desktop-hi79j2q:20860:b009c41a All dispatchers stopped
+2024-08-28 21:02:31.586 +03:00 [Information] Server desktop-hi79j2q:20860:b009c41a successfully reported itself as stopped in 3,18 ms
+2024-08-28 21:02:31.586 +03:00 [Information] Server desktop-hi79j2q:20860:b009c41a has been stopped in total 8,7995 ms
+2024-08-28 21:02:49.848 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 21:02:49.915 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 21:02:50.103 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 21:02:50.104 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 21:02:50.104 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 21:02:50.104 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 21:02:50.104 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 21:02:50.104 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 21:02:50.120 +03:00 [Information] Server desktop-hi79j2q:14772:6766bf5f successfully announced in 8,081 ms
+2024-08-28 21:02:50.122 +03:00 [Information] Server desktop-hi79j2q:14772:6766bf5f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 21:02:50.127 +03:00 [Information] Server desktop-hi79j2q:14772:6766bf5f all the dispatchers started
+2024-08-28 21:02:55.906 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 21:02:56.870 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 22:22:36.099 +03:00 [Information] Server desktop-hi79j2q:14772:6766bf5f caught stopping signal...
+2024-08-28 22:22:36.103 +03:00 [Information] Server desktop-hi79j2q:14772:6766bf5f All dispatchers stopped
+2024-08-28 22:22:36.107 +03:00 [Information] Server desktop-hi79j2q:14772:6766bf5f successfully reported itself as stopped in 2,2047 ms
+2024-08-28 22:22:36.107 +03:00 [Information] Server desktop-hi79j2q:14772:6766bf5f has been stopped in total 7,7058 ms
+2024-08-28 22:22:47.931 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 22:22:48.016 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 22:22:48.531 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 22:22:48.531 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 22:22:48.531 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 22:22:48.531 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 22:22:48.531 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 22:22:48.531 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 22:22:48.567 +03:00 [Information] Server desktop-hi79j2q:17700:62c0d26b successfully announced in 11,1445 ms
+2024-08-28 22:22:48.569 +03:00 [Information] Server desktop-hi79j2q:17700:62c0d26b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 22:22:48.572 +03:00 [Information] Server desktop-hi79j2q:17700:62c0d26b all the dispatchers started
+2024-08-28 22:23:18.588 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetUserBookById", параметры: "none", тело запроса ""
+2024-08-28 22:23:19.645 +03:00 [Information] Запрос "GET" "/api/UserBook/GetUserBookById" выполнен
+2024-08-28 22:23:19.645 +03:00 [Warning] Запрос "GET" "/api/UserBook/GetUserBookById" не выполнен, статус код ошибки 404 Not Found
+2024-08-28 22:23:25.543 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 22:23:25.646 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 22:28:40.525 +03:00 [Information] Server desktop-hi79j2q:17700:62c0d26b caught stopping signal...
+2024-08-28 22:28:40.529 +03:00 [Information] Server desktop-hi79j2q:17700:62c0d26b All dispatchers stopped
+2024-08-28 22:28:40.541 +03:00 [Information] Server desktop-hi79j2q:17700:62c0d26b successfully reported itself as stopped in 10,6794 ms
+2024-08-28 22:28:40.542 +03:00 [Information] Server desktop-hi79j2q:17700:62c0d26b has been stopped in total 15,6964 ms
+2024-08-28 22:28:45.400 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 22:28:45.466 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 22:28:45.666 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 22:28:45.667 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 22:28:45.667 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 22:28:45.667 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 22:28:45.667 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 22:28:45.667 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 22:28:45.684 +03:00 [Information] Server desktop-hi79j2q:25300:becf94ff successfully announced in 7,7119 ms
+2024-08-28 22:28:45.686 +03:00 [Information] Server desktop-hi79j2q:25300:becf94ff is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 22:28:45.691 +03:00 [Information] Server desktop-hi79j2q:25300:becf94ff all the dispatchers started
+2024-08-28 22:28:50.536 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 22:28:51.499 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 22:29:57.651 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 22:29:57.678 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 22:30:01.104 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 22:30:01.150 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 22:31:30.334 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 22:31:30.337 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 22:35:58.155 +03:00 [Information] Server desktop-hi79j2q:25300:becf94ff caught stopping signal...
+2024-08-28 22:35:58.159 +03:00 [Information] Server desktop-hi79j2q:25300:becf94ff All dispatchers stopped
+2024-08-28 22:35:58.170 +03:00 [Information] Server desktop-hi79j2q:25300:becf94ff successfully reported itself as stopped in 10,1516 ms
+2024-08-28 22:35:58.170 +03:00 [Information] Server desktop-hi79j2q:25300:becf94ff has been stopped in total 14,6295 ms
+2024-08-28 22:36:25.245 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 22:36:25.315 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 22:36:25.508 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 22:36:25.508 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 22:36:25.508 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 22:36:25.508 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 22:36:25.508 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 22:36:25.508 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 22:36:25.527 +03:00 [Information] Server desktop-hi79j2q:15308:b369c65f successfully announced in 9,2238 ms
+2024-08-28 22:36:25.529 +03:00 [Information] Server desktop-hi79j2q:15308:b369c65f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 22:36:25.533 +03:00 [Information] Server desktop-hi79j2q:15308:b369c65f all the dispatchers started
+2024-08-28 22:36:30.083 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 22:36:31.078 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 22:42:39.397 +03:00 [Information] Server desktop-hi79j2q:15308:b369c65f caught stopping signal...
+2024-08-28 22:42:39.400 +03:00 [Information] Server desktop-hi79j2q:15308:b369c65f All dispatchers stopped
+2024-08-28 22:42:39.406 +03:00 [Information] Server desktop-hi79j2q:15308:b369c65f successfully reported itself as stopped in 3,0848 ms
+2024-08-28 22:42:39.406 +03:00 [Information] Server desktop-hi79j2q:15308:b369c65f has been stopped in total 8,4828 ms
+2024-08-28 22:42:43.700 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 22:42:43.779 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 22:42:43.984 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 22:42:43.984 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 22:42:43.984 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 22:42:43.985 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 22:42:43.985 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 22:42:43.985 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 22:42:44.003 +03:00 [Information] Server desktop-hi79j2q:25372:75508979 successfully announced in 8,4267 ms
+2024-08-28 22:42:44.005 +03:00 [Information] Server desktop-hi79j2q:25372:75508979 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 22:42:44.010 +03:00 [Information] Server desktop-hi79j2q:25372:75508979 all the dispatchers started
+2024-08-28 22:42:48.346 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 22:42:49.351 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 22:43:34.141 +03:00 [Information] Server desktop-hi79j2q:25372:75508979 caught stopping signal...
+2024-08-28 22:43:34.145 +03:00 [Information] Server desktop-hi79j2q:25372:75508979 All dispatchers stopped
+2024-08-28 22:43:34.150 +03:00 [Information] Server desktop-hi79j2q:25372:75508979 successfully reported itself as stopped in 3,1835 ms
+2024-08-28 22:43:34.150 +03:00 [Information] Server desktop-hi79j2q:25372:75508979 has been stopped in total 8,3004 ms
+2024-08-28 22:43:37.363 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 22:43:37.432 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 22:43:37.627 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 22:43:37.627 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 22:43:37.627 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 22:43:37.627 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 22:43:37.627 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 22:43:37.627 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 22:43:37.644 +03:00 [Information] Server desktop-hi79j2q:10776:d1ccad62 successfully announced in 8,7641 ms
+2024-08-28 22:43:37.647 +03:00 [Information] Server desktop-hi79j2q:10776:d1ccad62 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 22:43:37.650 +03:00 [Information] Server desktop-hi79j2q:10776:d1ccad62 all the dispatchers started
+2024-08-28 22:43:43.880 +03:00 [Information] Запрос: "GET" "/api/UserBook/GetAllUsersBooks", параметры: "none", тело запроса ""
+2024-08-28 22:43:44.848 +03:00 [Information] Запрос "GET" "/api/UserBook/GetAllUsersBooks" выполнен
+2024-08-28 22:44:26.088 +03:00 [Information] Запрос: "GET" "/api/Book/GetAllBooks", параметры: "none", тело запроса ""
+2024-08-28 22:44:26.118 +03:00 [Information] Запрос "GET" "/api/Book/GetAllBooks" выполнен
+2024-08-28 22:44:44.514 +03:00 [Information] Server desktop-hi79j2q:10776:d1ccad62 caught stopping signal...
+2024-08-28 22:44:44.517 +03:00 [Information] Server desktop-hi79j2q:10776:d1ccad62 All dispatchers stopped
+2024-08-28 22:44:44.522 +03:00 [Information] Server desktop-hi79j2q:10776:d1ccad62 successfully reported itself as stopped in 3,4413 ms
+2024-08-28 22:44:44.522 +03:00 [Information] Server desktop-hi79j2q:10776:d1ccad62 has been stopped in total 7,0778 ms
+2024-08-28 22:44:47.918 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-08-28 22:44:47.988 +03:00 [Information] Hangfire SQL objects installed.
+2024-08-28 22:44:48.172 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-08-28 22:44:48.172 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-08-28 22:44:48.172 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-08-28 22:44:48.172 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-08-28 22:44:48.172 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-08-28 22:44:48.172 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-28 22:44:48.189 +03:00 [Information] Server desktop-hi79j2q:9036:412271f6 successfully announced in 7,9752 ms
+2024-08-28 22:44:48.191 +03:00 [Information] Server desktop-hi79j2q:9036:412271f6 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-28 22:44:48.195 +03:00 [Information] Server desktop-hi79j2q:9036:412271f6 all the dispatchers started
+2024-08-28 22:44:52.470 +03:00 [Information] Запрос: "GET" "/api/Book/GetAllBooks", параметры: "none", тело запроса ""
+2024-08-28 22:44:53.430 +03:00 [Information] Запрос "GET" "/api/Book/GetAllBooks" выполнен

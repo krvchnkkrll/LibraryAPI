@@ -25,9 +25,7 @@ file sealed class GetAllUsersBooksWithoutPaginationHandler : IRequestHandler<Get
             {
                 Id = u.Id,
                 UserId = u.UserId,
-                User = u.User,
                 BookId = u.BookId,
-                Book = u.Book,
                 DateReceipt = u.DateReceipt,
                 DateReturn = u.DateReturn,
                 BorrowPeriod = u.BorrowPeriod,

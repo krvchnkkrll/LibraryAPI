@@ -1,9 +1,11 @@
 ﻿using LibraryAPI.DbContext;
+using LibraryAPI.Handlers.Books.Queries;
+using LibraryAPI.Handlers.Users.Queries;
 using LibraryAPI.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace LibraryAPI.Handlers.UserBooks.Queries.GetAllUserBooks;
+namespace LibraryAPI.Handlers.UserBooks.Queries.GetAllUsersBooks;
 
 public sealed record GetAllUserBooks(
     int PageNumber, 
@@ -35,9 +37,20 @@ file sealed class GetAllUserBooksHandler : IRequestHandler<GetAllUserBooks, User
             {
                 Id = u.Id,
                 UserId = u.UserId,
-                User = u.User,
+                User = new UserQueriesDto
+                {
+                    Surname = u.User!.Surname,
+                    Name = u.User.Name,
+                    Patronymic = u.User.Patronymic,
+                    Password = u.User.Password
+                },
                 BookId = u.BookId,
-                Book = u.Book,
+                Book = new BooksQueriesDto
+                {
+                    Name = u.Book!.Name,
+                    Genre = u.Book.Genre,
+                    BookStatus = u.Book.BookStatus,
+                },
                 DateReceipt = u.DateReceipt,
                 DateReturn = u.DateReturn,
                 BorrowPeriod = u.BorrowPeriod,

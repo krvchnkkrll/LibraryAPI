@@ -3,7 +3,7 @@ using LibraryAPI.Handlers.UserBooks.Commands.Create;
 using LibraryAPI.Handlers.UserBooks.Commands.Delete;
 using LibraryAPI.Handlers.UserBooks.Commands.Update;
 using LibraryAPI.Handlers.UserBooks.Queries;
-using LibraryAPI.Handlers.UserBooks.Queries.GetAllUserBooks;
+using LibraryAPI.Handlers.UserBooks.Queries.GetAllUsersBooks;
 using LibraryAPI.Handlers.UserBooks.Queries.GetUserBookById;
 using LibraryAPI.Handlers.Users.Queries.GetUserById;
 using MediatR;

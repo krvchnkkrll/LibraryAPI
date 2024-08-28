@@ -1,4 +1,5 @@
 ﻿using LibraryAPI.DbContext;
+using LibraryAPI.Handlers.Authors.Queries;
 using LibraryAPI.Models;
 using LibraryAPI.Models.Enums;
 using MediatR;
@@ -55,12 +56,17 @@ file sealed class GetAllBooksHandler : IRequestHandler<GetAllBooks, BooksPaginat
                 Id = b.Id,
                 Name = b.Name,
                 Genre = b.Genre,
-                Author = b.Author,
                 AuthorId = b.AuthorId,
+                Author = new AuthorQueriesDto
+                {
+                    Surname = b.Author!.Surname,
+                    Name = b.Author.Name,
+                    Patronymic = b.Author.Patronymic
+                },
                 BookStatus = b.BookStatus
             })
-            .ToListAsync(cancellationToken);
-
+            .ToListAsync(cancellationToken); 
+        
         return new BooksPaginationDto(booksToReturn, paginationMetaData);
     }
 }

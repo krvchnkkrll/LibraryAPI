@@ -1,4 +1,5 @@
 ﻿using LibraryAPI.DbContext;
+using LibraryAPI.Handlers.Authors.Queries;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -31,10 +32,16 @@ file sealed class GetBookByIdHandler : IRequestHandler<GetBookById, BooksQueries
         {
             Id = book.Id,
             Name = book.Name,
-            AuthorId = book.AuthorId,
             BookStatus = book.BookStatus,
             Genre = book.Genre,
-            Author = book.Author
+            AuthorId = book.AuthorId,
+            Author = new AuthorQueriesDto
+            {
+                Id = book.Author!.Id,
+                Surname = book.Author.Surname,
+                Name = book.Author.Name,
+                Patronymic = book.Author.Patronymic
+            },
         };
 
         return bookToReturn;
