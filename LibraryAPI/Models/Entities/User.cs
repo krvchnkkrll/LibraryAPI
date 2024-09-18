@@ -5,8 +5,6 @@ namespace LibraryAPI.Models.Entities;
 
 public class User
 {
-    private User(){}
-    
     public User(string surname, string name, string? patronymic, string login, string password, bool isItStaff)
     {
         Surname = surname;

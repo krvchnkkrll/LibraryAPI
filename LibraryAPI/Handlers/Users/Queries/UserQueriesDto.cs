@@ -13,12 +13,12 @@ public class UserQueriesDto
     /// <summary>
     /// Фамилия пользователя
     /// </summary>
-    public string Surname { get; set; }
+    public string Surname { get; set; } = default!;
 
     /// <summary>
     /// Имя пользователя
     /// </summary>
-    public string Name { get; set; }
+    public string Name { get; set; } = default!;
 
     /// <summary>
     /// Отчество пользователя, необязательное
@@ -29,13 +29,13 @@ public class UserQueriesDto
     /// Логин пользователя
     /// </summary>
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
-    public string Login { get; set; }
+    public string Login { get; set; } = default!;
 
     /// <summary>
     /// Пароль пользователя
     /// </summary>
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
-    public string Password { get; set; }
+    public string Password { get; set; } = default!;
 
     /// <summary>
     /// Является ли пользователь сотрудником

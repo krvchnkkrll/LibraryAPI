@@ -1,0 +1,311 @@
+2024-09-17 23:44:09.704 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-09-17 23:44:09.772 +03:00 [Information] Hangfire SQL objects installed.
+2024-09-17 23:44:10.089 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-09-17 23:44:10.089 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-09-17 23:44:10.089 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-09-17 23:44:10.089 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-09-17 23:44:10.089 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-09-17 23:44:10.089 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-17 23:44:10.109 +03:00 [Information] Server desktop-hi79j2q:25168:05b6f44e successfully announced in 9,3233 ms
+2024-09-17 23:44:10.111 +03:00 [Information] Server desktop-hi79j2q:25168:05b6f44e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-17 23:44:10.115 +03:00 [Information] Server desktop-hi79j2q:25168:05b6f44e all the dispatchers started
+2024-09-17 23:44:10.256 +03:00 [Information] Removed 1 outdated record(s) from 'aggregatedcounter' table.
+2024-09-17 23:44:11.283 +03:00 [Information] Removed 1 outdated record(s) from 'job' table.
+2024-09-17 23:44:23.267 +03:00 [Information] Запрос: "GET" "/api/Authors/GetAuthorById", параметры: "?id=000", тело запроса ""
+2024-09-17 23:44:23.342 +03:00 [Information] Запрос "GET" "/api/Authors/GetAuthorById" выполнен
+2024-09-17 23:44:23.343 +03:00 [Warning] Запрос "GET" "/api/Authors/GetAuthorById" не выполнен, статус код ошибки 404 Not Found
+2024-09-17 23:52:13.209 +03:00 [Information] Server desktop-hi79j2q:25168:05b6f44e caught stopping signal...
+2024-09-17 23:52:13.212 +03:00 [Information] Server desktop-hi79j2q:25168:05b6f44e All dispatchers stopped
+2024-09-17 23:52:13.216 +03:00 [Information] Server desktop-hi79j2q:25168:05b6f44e successfully reported itself as stopped in 2,3355 ms
+2024-09-17 23:52:13.216 +03:00 [Information] Server desktop-hi79j2q:25168:05b6f44e has been stopped in total 6,5694 ms
+2024-09-17 23:52:22.846 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-09-17 23:52:22.915 +03:00 [Information] Hangfire SQL objects installed.
+2024-09-17 23:52:50.277 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-09-17 23:52:50.351 +03:00 [Information] Hangfire SQL objects installed.
+2024-09-17 23:52:50.596 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-09-17 23:52:50.597 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-09-17 23:52:50.597 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-09-17 23:52:50.597 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-09-17 23:52:50.597 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-09-17 23:52:50.597 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-17 23:52:50.616 +03:00 [Information] Server desktop-hi79j2q:16860:994384eb successfully announced in 9,0392 ms
+2024-09-17 23:52:50.618 +03:00 [Information] Server desktop-hi79j2q:16860:994384eb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-17 23:52:50.622 +03:00 [Information] Server desktop-hi79j2q:16860:994384eb all the dispatchers started
+2024-09-17 23:52:58.384 +03:00 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+/hangfire/{**path}
+/hangfire/{**path}
+Fallback {*path:nonfile}
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-17 23:52:58.489 +03:00 [Information] Запрос: "GET" "/favicon.ico", параметры: "none", тело запроса ""
+2024-09-17 23:52:58.493 +03:00 [Information] Запрос "GET" "/favicon.ico" выполнен
+2024-09-17 23:52:58.493 +03:00 [Warning] Запрос "GET" "/favicon.ico" не выполнен, статус код ошибки 404 Not Found
+2024-09-17 23:54:26.767 +03:00 [Information] Server desktop-hi79j2q:16860:994384eb caught stopping signal...
+2024-09-17 23:54:26.770 +03:00 [Information] Server desktop-hi79j2q:16860:994384eb All dispatchers stopped
+2024-09-17 23:54:26.783 +03:00 [Information] Server desktop-hi79j2q:16860:994384eb successfully reported itself as stopped in 10,914 ms
+2024-09-17 23:54:26.783 +03:00 [Information] Server desktop-hi79j2q:16860:994384eb has been stopped in total 15,9068 ms
+2024-09-17 23:54:30.024 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-09-17 23:54:30.096 +03:00 [Information] Hangfire SQL objects installed.
+2024-09-17 23:54:30.363 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-09-17 23:54:30.364 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-09-17 23:54:30.364 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-09-17 23:54:30.364 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-09-17 23:54:30.364 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-09-17 23:54:30.364 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-17 23:54:30.384 +03:00 [Information] Server desktop-hi79j2q:18136:2299db34 successfully announced in 9,2363 ms
+2024-09-17 23:54:30.386 +03:00 [Information] Server desktop-hi79j2q:18136:2299db34 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-17 23:54:30.390 +03:00 [Information] Server desktop-hi79j2q:18136:2299db34 all the dispatchers started
+2024-09-17 23:54:36.151 +03:00 [Information] Запрос: "GET" "/api/Book/GetAllBooks", параметры: "none", тело запроса ""
+2024-09-17 23:54:37.256 +03:00 [Information] Запрос "GET" "/api/Book/GetAllBooks" выполнен
+2024-09-17 23:54:45.373 +03:00 [Information] Запрос: "GET" "/api/Book/GetBookById", параметры: "?id=56", тело запроса ""
+2024-09-17 23:54:45.459 +03:00 [Information] Запрос "GET" "/api/Book/GetBookById" выполнен
+2024-09-17 23:54:45.459 +03:00 [Warning] Запрос "GET" "/api/Book/GetBookById" не выполнен, статус код ошибки 404 Not Found
+2024-09-17 23:54:50.938 +03:00 [Information] Запрос: "GET" "/api/Book/GetBookById", параметры: "?id=56", тело запроса ""
+2024-09-17 23:54:50.998 +03:00 [Information] Запрос "GET" "/api/Book/GetBookById" выполнен
+2024-09-17 23:54:50.998 +03:00 [Warning] Запрос "GET" "/api/Book/GetBookById" не выполнен, статус код ошибки 404 Not Found
+2024-09-17 23:56:06.032 +03:00 [Information] Server desktop-hi79j2q:18136:2299db34 caught stopping signal...
+2024-09-17 23:56:06.035 +03:00 [Information] Server desktop-hi79j2q:18136:2299db34 All dispatchers stopped
+2024-09-17 23:56:06.048 +03:00 [Information] Server desktop-hi79j2q:18136:2299db34 successfully reported itself as stopped in 10,5418 ms
+2024-09-17 23:56:06.048 +03:00 [Information] Server desktop-hi79j2q:18136:2299db34 has been stopped in total 15,203 ms
+2024-09-17 23:56:09.233 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-09-17 23:56:09.300 +03:00 [Information] Hangfire SQL objects installed.
+2024-09-17 23:56:09.518 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-09-17 23:56:09.519 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-09-17 23:56:09.519 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-09-17 23:56:09.519 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-09-17 23:56:09.519 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-09-17 23:56:09.519 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-17 23:56:09.536 +03:00 [Information] Server desktop-hi79j2q:10876:547213b4 successfully announced in 7,9019 ms
+2024-09-17 23:56:09.538 +03:00 [Information] Server desktop-hi79j2q:10876:547213b4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-17 23:56:09.542 +03:00 [Information] Server desktop-hi79j2q:10876:547213b4 all the dispatchers started
+2024-09-17 23:56:18.206 +03:00 [Information] Запрос: "GET" "/api/Authors/GetAllAuthors", параметры: "none", тело запроса ""
+2024-09-17 23:56:19.144 +03:00 [Information] Запрос "GET" "/api/Authors/GetAllAuthors" выполнен
+2024-09-17 23:56:22.663 +03:00 [Information] Запрос: "GET" "/api/Authors/GetAllAuthors", параметры: "none", тело запроса ""
+2024-09-17 23:56:22.686 +03:00 [Information] Запрос "GET" "/api/Authors/GetAllAuthors" выполнен
+2024-09-17 23:56:25.679 +03:00 [Information] Запрос: "GET" "/api/Authors/GetAllAuthor", параметры: "none", тело запроса ""
+2024-09-17 23:56:25.680 +03:00 [Information] Запрос "GET" "/api/Authors/GetAllAuthor" выполнен
+2024-09-17 23:56:25.680 +03:00 [Warning] Запрос "GET" "/api/Authors/GetAllAuthor" не выполнен, статус код ошибки 404 Not Found
+2024-09-17 23:56:31.327 +03:00 [Information] Server desktop-hi79j2q:10876:547213b4 caught stopping signal...
+2024-09-17 23:56:31.330 +03:00 [Information] Server desktop-hi79j2q:10876:547213b4 All dispatchers stopped
+2024-09-17 23:56:31.335 +03:00 [Information] Server desktop-hi79j2q:10876:547213b4 successfully reported itself as stopped in 2,7869 ms
+2024-09-17 23:56:31.335 +03:00 [Information] Server desktop-hi79j2q:10876:547213b4 has been stopped in total 7,3454 ms
+2024-09-17 23:56:34.505 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-09-17 23:56:34.572 +03:00 [Information] Hangfire SQL objects installed.
+2024-09-17 23:56:34.826 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-09-17 23:56:34.827 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-09-17 23:56:34.827 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-09-17 23:56:34.827 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-09-17 23:56:34.827 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-09-17 23:56:34.827 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-17 23:56:34.845 +03:00 [Information] Server desktop-hi79j2q:14784:3fcc7e16 successfully announced in 9,341 ms
+2024-09-17 23:56:34.847 +03:00 [Information] Server desktop-hi79j2q:14784:3fcc7e16 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-17 23:56:34.850 +03:00 [Information] Server desktop-hi79j2q:14784:3fcc7e16 all the dispatchers started
+2024-09-17 23:56:39.753 +03:00 [Information] Запрос: "GET" "/api/Authors/GetAllAuthor", параметры: "none", тело запроса ""
+2024-09-17 23:56:39.757 +03:00 [Information] Запрос "GET" "/api/Authors/GetAllAuthor" выполнен
+2024-09-17 23:56:39.757 +03:00 [Warning] Запрос "GET" "/api/Authors/GetAllAuthor" не выполнен, статус код ошибки 404 Not Found
+2024-09-17 23:57:03.652 +03:00 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+/hangfire/{**path}
+/hangfire/{**path}
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-17 23:57:04.625 +03:00 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+/hangfire/{**path}
+/hangfire/{**path}
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-17 23:57:05.618 +03:00 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+/hangfire/{**path}
+/hangfire/{**path}
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-17 23:57:06.364 +03:00 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+/hangfire/{**path}
+/hangfire/{**path}
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-17 23:57:16.353 +03:00 [Information] Server desktop-hi79j2q:14784:3fcc7e16 caught stopping signal...
+2024-09-17 23:57:16.357 +03:00 [Information] Server desktop-hi79j2q:14784:3fcc7e16 All dispatchers stopped
+2024-09-17 23:57:16.362 +03:00 [Information] Server desktop-hi79j2q:14784:3fcc7e16 successfully reported itself as stopped in 2,6764 ms
+2024-09-17 23:57:16.362 +03:00 [Information] Server desktop-hi79j2q:14784:3fcc7e16 has been stopped in total 8,4467 ms
+2024-09-17 23:57:19.556 +03:00 [Information] Start installing Hangfire SQL objects...
+2024-09-17 23:57:19.622 +03:00 [Information] Hangfire SQL objects installed.
+2024-09-17 23:57:19.861 +03:00 [Information] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: LibraryDB, Schema: hangfire'
+2024-09-17 23:57:19.861 +03:00 [Information] Using the following options for PostgreSQL job storage:
+2024-09-17 23:57:19.862 +03:00 [Information]     Queue poll interval: 00:00:15.
+2024-09-17 23:57:19.862 +03:00 [Information]     Invisibility timeout: 00:30:00.
+2024-09-17 23:57:19.862 +03:00 [Information]     Use sliding invisibility timeout: False.
+2024-09-17 23:57:19.862 +03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-09-17 23:57:19.879 +03:00 [Information] Server desktop-hi79j2q:17704:5ba9d9a4 successfully announced in 7,9643 ms
+2024-09-17 23:57:19.881 +03:00 [Information] Server desktop-hi79j2q:17704:5ba9d9a4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-09-17 23:57:19.885 +03:00 [Information] Server desktop-hi79j2q:17704:5ba9d9a4 all the dispatchers started
+2024-09-17 23:57:22.092 +03:00 [Information] Запрос: "GET" "/hangfire", параметры: "none", тело запроса ""
+2024-09-17 23:57:22.169 +03:00 [Information] Запрос "GET" "/hangfire" выполнен
+2024-09-17 23:57:22.190 +03:00 [Information] Запрос: "GET" "/hangfire/css181401981347022", параметры: "none", тело запроса ""
+2024-09-17 23:57:22.190 +03:00 [Information] Запрос: "GET" "/hangfire/css-dark181401447700863", параметры: "none", тело запроса ""
+2024-09-17 23:57:22.190 +03:00 [Information] Запрос: "GET" "/hangfire/js18140247463097", параметры: "none", тело запроса ""
+2024-09-17 23:57:22.197 +03:00 [Information] Запрос "GET" "/hangfire/css-dark181401447700863" выполнен
+2024-09-17 23:57:22.197 +03:00 [Information] Запрос "GET" "/hangfire/css181401981347022" выполнен
+2024-09-17 23:57:22.203 +03:00 [Information] Запрос "GET" "/hangfire/js18140247463097" выполнен
+2024-09-17 23:57:22.212 +03:00 [Information] Запрос: "GET" "/hangfire/fonts/glyphicons-halflings-regular/woff2", параметры: "none", тело запроса ""
+2024-09-17 23:57:22.213 +03:00 [Information] Запрос "GET" "/hangfire/fonts/glyphicons-halflings-regular/woff2" выполнен
+2024-09-17 23:57:23.326 +03:00 [Information] Запрос: "GET" "/hangfire", параметры: "none", тело запроса ""
+2024-09-17 23:57:23.338 +03:00 [Information] Запрос "GET" "/hangfire" выполнен
+2024-09-17 23:57:23.869 +03:00 [Information] Запрос: "GET" "/hangfire", параметры: "none", тело запроса ""
+2024-09-17 23:57:23.880 +03:00 [Information] Запрос "GET" "/hangfire" выполнен
+2024-09-17 23:57:24.337 +03:00 [Information] Запрос: "GET" "/hangfire", параметры: "none", тело запроса ""
+2024-09-17 23:57:24.349 +03:00 [Information] Запрос "GET" "/hangfire" выполнен
+2024-09-17 23:57:24.752 +03:00 [Information] Запрос: "GET" "/hangfire", параметры: "none", тело запроса ""
+2024-09-17 23:57:24.764 +03:00 [Information] Запрос "GET" "/hangfire" выполнен
+2024-09-17 23:57:26.799 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount&metrics%5B%5D=succeeded%3Acount&metrics%5B%5D=failed%3Acount&metrics%5B%5D=deleted%3Acount"
+2024-09-17 23:57:26.817 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:28.828 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount&metrics%5B%5D=succeeded%3Acount&metrics%5B%5D=failed%3Acount&metrics%5B%5D=deleted%3Acount"
+2024-09-17 23:57:28.835 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:31.650 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount&metrics%5B%5D=succeeded%3Acount&metrics%5B%5D=failed%3Acount&metrics%5B%5D=deleted%3Acount"
+2024-09-17 23:57:31.658 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:33.669 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount&metrics%5B%5D=succeeded%3Acount&metrics%5B%5D=failed%3Acount&metrics%5B%5D=deleted%3Acount"
+2024-09-17 23:57:33.678 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:35.689 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount&metrics%5B%5D=succeeded%3Acount&metrics%5B%5D=failed%3Acount&metrics%5B%5D=deleted%3Acount"
+2024-09-17 23:57:35.691 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:37.696 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount&metrics%5B%5D=succeeded%3Acount&metrics%5B%5D=failed%3Acount&metrics%5B%5D=deleted%3Acount"
+2024-09-17 23:57:37.704 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:38.035 +03:00 [Information] Запрос: "GET" "/hangfire/jobs/enqueued", параметры: "none", тело запроса ""
+2024-09-17 23:57:38.046 +03:00 [Information] Запрос "GET" "/hangfire/jobs/enqueued" выполнен
+2024-09-17 23:57:40.085 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount&metrics%5B%5D=enqueued-queues%3Acount&metrics%5B%5D=scheduled%3Acount&metrics%5B%5D=processing%3Acount&metrics%5B%5D=succeeded%3Acount&metrics%5B%5D=failed%3Acount&metrics%5B%5D=deleted%3Acount&metrics%5B%5D=awaiting%3Acount"
+2024-09-17 23:57:40.092 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:40.544 +03:00 [Information] Запрос: "GET" "/hangfire/recurring", параметры: "none", тело запроса ""
+2024-09-17 23:57:40.584 +03:00 [Information] Запрос "GET" "/hangfire/recurring" выполнен
+2024-09-17 23:57:42.629 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:57:42.633 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:44.571 +03:00 [Information] Запрос: "GET" "/hangfire/servers", параметры: "none", тело запроса ""
+2024-09-17 23:57:44.589 +03:00 [Information] Запрос "GET" "/hangfire/servers" выполнен
+2024-09-17 23:57:46.324 +03:00 [Information] Запрос: "GET" "/hangfire/recurring", параметры: "none", тело запроса ""
+2024-09-17 23:57:46.333 +03:00 [Information] Запрос "GET" "/hangfire/recurring" выполнен
+2024-09-17 23:57:48.367 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:57:48.372 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:50.381 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:57:50.382 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:52.387 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:57:52.389 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:54.400 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:57:54.402 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:56.425 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:57:56.427 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:57:58.434 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:57:58.436 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:00.458 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:00.459 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:02.477 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:02.481 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:04.492 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:04.498 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:06.514 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:06.516 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:08.530 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:08.532 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:10.540 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:10.542 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:12.550 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:12.551 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:14.558 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:14.561 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:16.575 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:16.577 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:18.589 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:18.592 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:20.611 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:20.613 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:22.627 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:22.634 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:24.644 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:24.649 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:26.661 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:26.665 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:28.683 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:28.685 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:30.702 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:30.703 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:32.720 +03:00 [Information] Запрос: "POST" "/hangfire/stats", параметры: "none", тело запроса "metrics%5B%5D=enqueued%3Acount-or-null&metrics%5B%5D=failed%3Acount-or-null&metrics%5B%5D=retries%3Acount&metrics%5B%5D=recurring%3Acount&metrics%5B%5D=servers%3Acount"
+2024-09-17 23:58:32.723 +03:00 [Information] Запрос "POST" "/hangfire/stats" выполнен
+2024-09-17 23:58:34.622 +03:00 [Information] Server desktop-hi79j2q:17704:5ba9d9a4 caught stopping signal...
+2024-09-17 23:58:34.626 +03:00 [Information] Server desktop-hi79j2q:17704:5ba9d9a4 All dispatchers stopped
+2024-09-17 23:58:34.629 +03:00 [Information] Server desktop-hi79j2q:17704:5ba9d9a4 successfully reported itself as stopped in 1,44 ms
+2024-09-17 23:58:34.629 +03:00 [Information] Server desktop-hi79j2q:17704:5ba9d9a4 has been stopped in total 6,2498 ms

@@ -11,6 +11,8 @@ using Hangfire;
 using Hangfire.PostgreSql;
 using LibraryAPI.Services.Hangfire;
 using Serilog; 
+using System.IO.Compression;
+using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +30,23 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<LibraryInfoContext>(
     dbContextOptions => dbContextOptions.UseNpgsql(
         builder.Configuration.GetConnectionString("LibraryDB")));
+
+builder.Services.AddResponseCompression(options =>
+{
+    options.Providers.Add<GzipCompressionProvider>(); 
+    options.Providers.Add<BrotliCompressionProvider>();
+    options.EnableForHttps = true;
+});
+
+builder.Services.Configure<BrotliCompressionProviderOptions>(options =>
+{
+    options.Level = CompressionLevel.Fastest;
+});
+
+builder.Services.Configure<GzipCompressionProviderOptions>(options =>
+{
+    options.Level = CompressionLevel.Fastest;
+});
 
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(options =>
@@ -67,7 +86,8 @@ builder.Services.AddHangfire(configuration => configuration
     .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
     .UseSimpleAssemblyNameTypeSerializer()
     .UseRecommendedSerializerSettings()
-    .UsePostgreSqlStorage(builder.Configuration.GetConnectionString("HangfireConnection")));
+    .UsePostgreSqlStorage(options => 
+        options.UseNpgsqlConnection(builder.Configuration.GetConnectionString("HangfireConnection"))));
 
 builder.Services.AddHangfireServer();
 builder.Services.AddTransient<UserBookService>();
@@ -87,7 +107,16 @@ app.UseAuthorization();
 app.UseMiddleware<LoggingMiddleware>();
 
 app.MapControllers();
-app.MapHangfireDashboard();
+app.MapHangfireDashboard("/hangfire"); 
+
+app.UseResponseCompression();
+
+app.MapFallback(async context =>
+{
+    context.Response.StatusCode = 404;
+    await context.Response.WriteAsync("404 Page not found");
+});
+
 app.Lifetime.ApplicationStopped.Register(Log.CloseAndFlush);
 
 

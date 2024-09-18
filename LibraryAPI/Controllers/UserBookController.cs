@@ -40,7 +40,7 @@ public class UserBookController : ControllerBase
 
             return Ok(usersBook);
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -63,7 +63,7 @@ public class UserBookController : ControllerBase
         {
             return NotFound();
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -83,7 +83,7 @@ public class UserBookController : ControllerBase
 
             return Ok("Книга пользователя добавлена");
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -104,7 +104,7 @@ public class UserBookController : ControllerBase
 
             return Ok("Книга пользователя изменена");
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -128,7 +128,7 @@ public class UserBookController : ControllerBase
             return NotFound("Запись не найдена");
         }
         
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }

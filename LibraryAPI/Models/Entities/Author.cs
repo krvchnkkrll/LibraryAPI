@@ -5,8 +5,6 @@ namespace LibraryAPI.Models.Entities;
 
 public class Author
 {
-    private Author(){}
-
     public Author(string surname, string name, string? patronymic)
     {
         Surname = surname;

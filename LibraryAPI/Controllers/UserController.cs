@@ -53,7 +53,7 @@ public class UserController : ControllerBase
             return Ok(user);
         }
         
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -78,7 +78,7 @@ public class UserController : ControllerBase
             return NotFound();
         }
         
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -98,7 +98,7 @@ public class UserController : ControllerBase
             return Ok("Пользователь добавлен");
         }
         
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -119,7 +119,7 @@ public class UserController : ControllerBase
             return Ok("Пользователь изменен");
         }
         
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -141,7 +141,7 @@ public class UserController : ControllerBase
             return NotFound("Запись не найдена");
         }
         
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }

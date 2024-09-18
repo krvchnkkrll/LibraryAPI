@@ -11,26 +11,33 @@
   <component name="ChangeListManager">
     <list default="true" id="fb7d421b-beff-4f38-b48f-d8eb3d0e8baa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/AuthorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/AuthorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/BookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/BookController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/UserBookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/UserBookController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Queries/BooksQueriesDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Queries/BooksQueriesDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Queries/GetAllBooks/GetAllBooks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Queries/GetAllBooks/GetAllBooks.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Queries/GetBookById/GetBookById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Books/Queries/GetBookById/GetBookById.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/GetAllUsersBooks/GetAllUserBooks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/GetAllUsersBooks/GetAllUserBooks.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/GetAllUsersBooks/GetAllUsersBooksWithoutPagination.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/GetAllUsersBooks/GetAllUsersBooksWithoutPagination.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/GetUserBookById/GetUserBookById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/GetUserBookById/GetUserBookById.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/UserBooksQueriesDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/UserBooks/Queries/UserBooksQueriesDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/UserController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Queries/UserQueriesDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Queries/UserQueriesDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/LibraryAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/LibraryAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Models/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Models/Entities/Author.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Models/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Models/Entities/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/ref/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/ref/LibraryAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/refint/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/refint/LibraryAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +205,14 @@
       <workItem from="1724355317723" duration="1056000" />
       <workItem from="1724513023825" duration="1846000" />
       <workItem from="1724699399566" duration="3151000" />
-      <workItem from="1724854484461" duration="7327000" />
+      <workItem from="1724854484461" duration="8237000" />
+      <workItem from="1725195495388" duration="612000" />
+      <workItem from="1725302056896" duration="1155000" />
+      <workItem from="1725387640369" duration="1716000" />
+      <workItem from="1726386104619" duration="7325000" />
+      <workItem from="1726501771716" duration="2323000" />
+      <workItem from="1726602611245" duration="3560000" />
+      <workItem from="1726679152415" duration="3680000" />
     </task>
     <servers />
   </component>

@@ -24,7 +24,6 @@ public class BookController : ControllerBase
     }
     
     [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
     [HttpGet("GetAllBooks")]
     public async Task<IActionResult> GetAllBooks(
         [FromQuery] string? name,
@@ -48,7 +47,7 @@ public class BookController : ControllerBase
             return Ok(books);
         }
         
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -76,7 +75,7 @@ public class BookController : ControllerBase
             return NotFound();
         }
         
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -99,7 +98,7 @@ public class BookController : ControllerBase
             return Ok("Книга добавлена");
         }
         
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -122,7 +121,7 @@ public class BookController : ControllerBase
             return Ok("Книга измена");
         }
         
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -146,7 +145,7 @@ public class BookController : ControllerBase
             return NotFound("Запись не найдена");
         }
         
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }

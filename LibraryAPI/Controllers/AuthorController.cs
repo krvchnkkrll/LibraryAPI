@@ -47,7 +47,7 @@ public class AuthorsController : ControllerBase
         
             return Ok(authors);
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -71,7 +71,7 @@ public class AuthorsController : ControllerBase
         {
             return NotFound();
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -91,7 +91,7 @@ public class AuthorsController : ControllerBase
 
             return Ok("Автор добавлен");
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -112,7 +112,7 @@ public class AuthorsController : ControllerBase
 
             return Ok("Автор изменен");
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
@@ -128,7 +128,7 @@ public class AuthorsController : ControllerBase
         
             return Ok("Автор удален");
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }

@@ -1,0 +1,4 @@
+2024-08-29 00:09:45.326 +03:00 [Information] Server desktop-hi79j2q:9036:412271f6 caught stopping signal...
+2024-08-29 00:09:45.333 +03:00 [Information] Server desktop-hi79j2q:9036:412271f6 All dispatchers stopped
+2024-08-29 00:09:45.338 +03:00 [Information] Server desktop-hi79j2q:9036:412271f6 successfully reported itself as stopped in 3,5345 ms
+2024-08-29 00:09:45.338 +03:00 [Information] Server desktop-hi79j2q:9036:412271f6 has been stopped in total 8,9039 ms
