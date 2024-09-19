@@ -10,34 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb7d421b-beff-4f38-b48f-d8eb3d0e8baa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/AuthorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/AuthorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/BookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/BookController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/UserBookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/UserBookController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Queries/UserQueriesDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Handlers/Users/Queries/UserQueriesDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/LibraryAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/LibraryAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Models/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Models/Entities/Author.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Models/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Models/Entities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/bin/Debug/net8.0/LibraryAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryAPI/Logs/log-20240918.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/Logs/log-20240918.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/LibraryAPI.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/ref/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/ref/LibraryAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/refint/LibraryAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/Debug/net8.0/refint/LibraryAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/LibraryAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +67,9 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;GitIgnore&quot;
+    ],
     &quot;rider.external.source.directories&quot;: [
       &quot;C:\\Users\\krvch\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
       &quot;C:\\Users\\krvch\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
@@ -212,7 +193,9 @@
       <workItem from="1726386104619" duration="7325000" />
       <workItem from="1726501771716" duration="2323000" />
       <workItem from="1726602611245" duration="3560000" />
-      <workItem from="1726679152415" duration="3680000" />
+      <workItem from="1726679152415" duration="5413000" />
+      <workItem from="1726764667989" duration="403000" />
+      <workItem from="1726765171700" duration="1050000" />
     </task>
     <servers />
   </component>

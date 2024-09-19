@@ -77,3 +77,7 @@
 2024-09-18 23:22:05.676 +03:00 [Information] Запрос "GET" "/api/Authors/GetAllAuthors" выполнен
 2024-09-18 23:22:15.719 +03:00 [Information] Запрос: "GET" "/api/Authors/GetAllAuthors", параметры: "none", тело запроса ""
 2024-09-18 23:22:15.721 +03:00 [Information] Запрос "GET" "/api/Authors/GetAllAuthors" выполнен
+2024-09-18 23:33:01.963 +03:00 [Information] Server desktop-hi79j2q:4712:6a065806 caught stopping signal...
+2024-09-18 23:33:01.966 +03:00 [Information] Server desktop-hi79j2q:4712:6a065806 All dispatchers stopped
+2024-09-18 23:33:01.978 +03:00 [Information] Server desktop-hi79j2q:4712:6a065806 successfully reported itself as stopped in 10,2226 ms
+2024-09-18 23:33:01.978 +03:00 [Information] Server desktop-hi79j2q:4712:6a065806 has been stopped in total 14,6493 ms
