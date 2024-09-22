@@ -1,4 +1,5 @@
-﻿using LibraryAPI.Core.Models.Entities;
+﻿using System.Reflection;
+using LibraryAPI.Core.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace LibraryAPI.Infrastructure.DbContext;
@@ -18,4 +19,10 @@ public class LibraryInfoContext : Microsoft.EntityFrameworkCore.DbContext
     {
         
     }
+    /*
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+    }
+    */
 }

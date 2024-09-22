@@ -16,6 +16,12 @@ public static class ConfigureServices
 {
     public static IServiceCollection AddApplication(this IServiceCollection services, IConfiguration configuration)
     {
+        var hangfireConnection = configuration.GetConnectionString("HangfireConnection");
+        var hangfirePassword = configuration["DBPassword:LibraryDBPassword"];
+        var authenticationSecretForKey = configuration["Authentication:SecretForKey"];
+        
+        hangfireConnection += hangfirePassword;
+        
         services.AddAuthentication("Bearer")
             .AddJwtBearer(options =>
                 {
@@ -27,7 +33,7 @@ public static class ConfigureServices
                         ValidIssuer = configuration["Authentication:Issuer"],
                         ValidAudience = configuration["Authentication:Audience"],
                         IssuerSigningKey = new SymmetricSecurityKey(
-                            Encoding.ASCII.GetBytes(configuration["Authentication:SecretForKey"]!))
+                            Encoding.ASCII.GetBytes(authenticationSecretForKey!))
                     };
                 }
             );
@@ -58,7 +64,7 @@ public static class ConfigureServices
             .UseSimpleAssemblyNameTypeSerializer()
             .UseRecommendedSerializerSettings()
             .UsePostgreSqlStorage(options => 
-                options.UseNpgsqlConnection(configuration.GetConnectionString("HangfireConnection"))));
+                options.UseNpgsqlConnection(hangfireConnection)));
         
         services.AddHangfireServer();
         services.AddTransient<UserBookService>();

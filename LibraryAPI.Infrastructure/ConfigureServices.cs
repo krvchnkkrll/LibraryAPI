@@ -9,9 +9,14 @@ public static class ConfigureServices
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services,  IConfiguration configuration)
     {
+        var libraryDbConnection = configuration.GetConnectionString("LibraryDB");
+        var libraryDbPassword = configuration["DBPassword:LibraryDBPassword"];
+
+        libraryDbConnection += libraryDbPassword; 
+        
         services.AddDbContext<LibraryInfoContext>(dbContextOptions =>
         {
-            dbContextOptions.UseNpgsql(configuration.GetConnectionString("LibraryDB"));
+            dbContextOptions.UseNpgsql(libraryDbConnection);
         });
         
         return services;
