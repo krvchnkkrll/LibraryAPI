@@ -6,6 +6,8 @@ using Hangfire;
 using Hangfire.PostgreSql;
 using LibraryAPI.Application.Behaviors;
 using LibraryAPI.Application.Services.Hangfire;
+using LibraryAPI.Application.Services.Logging;
+using LibraryAPI.Infrastructure.LoggingEntities;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -69,6 +71,7 @@ public static class ConfigureServices
         services.AddHangfireServer();
         services.AddTransient<UserBookService>();
         services.AddTransient<BookService>();
+        services.AddScoped<EntityChangeLogging>();
         
         return services;
     }

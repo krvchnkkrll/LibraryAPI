@@ -7,12 +7,16 @@ using LibraryAPI.Application.Services.Hangfire;
 using LibraryAPI.Application.Services.Logging;
 
 using Microsoft.AspNetCore.ResponseCompression;
+using Serilog.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .Enrich.FromLogContext()
+    .WriteTo.Logger(entityLogger => entityLogger
+        .Filter.ByIncludingOnly(Matching.FromSource("LibraryAPI.Infrastructure.LoggingEntities.EntityChangeLogging"))
+        .WriteTo.File("Logs/entity-changes-log-.txt", rollingInterval: RollingInterval.Day))
     .CreateLogger();
 
 builder.Host.UseSerilog();
@@ -50,10 +54,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+app.UseMiddleware<LoggingMiddleware>();
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
-app.UseMiddleware<LoggingMiddleware>();
+
 
 app.MapControllers();
 app.MapHangfireDashboard("/hangfire"); 

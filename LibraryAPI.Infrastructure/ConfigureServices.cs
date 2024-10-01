@@ -1,4 +1,5 @@
 ﻿using LibraryAPI.Infrastructure.DbContext;
+using LibraryAPI.Infrastructure.LoggingEntities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,6 +20,9 @@ public static class ConfigureServices
             dbContextOptions.UseNpgsql(libraryDbConnection);
         });
         
+        services.AddTransient<EntityChangeLogging>();
+        
         return services;
     }
 }
+
