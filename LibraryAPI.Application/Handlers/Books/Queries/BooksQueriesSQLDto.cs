@@ -4,7 +4,7 @@ using LibraryAPI.Core.Models.Enums;
 
 namespace LibraryAPI.Application.Handlers.Books.Queries;
 
-public class BooksQueriesDto
+public class BooksQueriesSqlDto
 {
     /// <summary>
     /// Уникальный идентификатор книги
@@ -18,7 +18,7 @@ public class BooksQueriesDto
     public string Name { get; set; } = default!;
     
     /// <summary>
-    ///  Жанр книги из перечисления жанров
+    /// Жанр книги из перечисления жанров
     /// </summary>
     public Genre Genre { get; set; }
     
@@ -31,15 +31,24 @@ public class BooksQueriesDto
     public int AuthorId { get; set; }
     
     /// <summary>
-    /// Автор
+    /// Фамилия автора
     /// </summary>
-    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
-    public AuthorQueriesDto? Author { get; set; }
+    public string AuthorSurname { get; set; } = default!;
+
+    /// <summary>
+    /// Имя автора
+    /// </summary>
+    public string AuthorName { get; set; } = default!;
+
+    /// <summary>
+    /// Отчество автора
+    /// </summary>
+    public string AuthorPatronymic { get; set; } = default!;
     
     /// <summary>
     /// Статус книги
     /// </summary>
     public BookStatus BookStatus { get; set; }
-    
+
     public string BookStatusName => BookStatus.ToString();
 }

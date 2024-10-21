@@ -50,7 +50,26 @@ public class BookController : ControllerBase
         {
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
+    }
+    
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [HttpGet("GetAllBooksSQL")]
+    public async Task<IActionResult> GetAllBooksSql(
+        CancellationToken cancellationToken)
+    {
+        try
+        {
+            var query = new GetAllBooksSql();
+
+            var books = await _mediator.Send(query, cancellationToken);
+       
+            return Ok(books);
+        }
         
+        catch (Exception)
+        {
+            return StatusCode(500, "Произошла ошибка при обработке запроса.");
+        }
     }
 
     [HttpGet("GetBookById")]
